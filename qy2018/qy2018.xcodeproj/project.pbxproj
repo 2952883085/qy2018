@@ -2161,6 +2161,13 @@
 		9B97C2B92069F6B00057A54D /* 锦囊.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B97BB242069F6AC0057A54D /* 锦囊.png */; };
 		9B97C2BA2069F6B00057A54D /* 韩国.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B97BB252069F6AC0057A54D /* 韩国.png */; };
 		9B97C2BB2069F6B00057A54D /* 韩国@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B97BB262069F6AC0057A54D /* 韩国@2x.png */; };
+		9B97C2BF206A14C10057A54D /* DesinationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2BD206A14C10057A54D /* DesinationController.m */; };
+		9B97C2C0206A14C10057A54D /* DesinationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B97C2BE206A14C10057A54D /* DesinationController.xib */; };
+		9B97C2C4206A14EF0057A54D /* CommunityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2C2206A14EF0057A54D /* CommunityController.m */; };
+		9B97C2C5206A14EF0057A54D /* CommunityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B97C2C3206A14EF0057A54D /* CommunityController.xib */; };
+		9B97C2C9206A15210057A54D /* MineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2C7206A15210057A54D /* MineController.m */; };
+		9B97C2CA206A15210057A54D /* MineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B97C2C8206A15210057A54D /* MineController.xib */; };
+		9B97C2CE206A15700057A54D /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2CD206A15700057A54D /* CustomTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -4542,6 +4549,17 @@
 		9B97BB242069F6AC0057A54D /* 锦囊.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "锦囊.png"; sourceTree = "<group>"; };
 		9B97BB252069F6AC0057A54D /* 韩国.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "韩国.png"; sourceTree = "<group>"; };
 		9B97BB262069F6AC0057A54D /* 韩国@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "韩国@2x.png"; sourceTree = "<group>"; };
+		9B97C2BC206A14C10057A54D /* DesinationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesinationController.h; sourceTree = "<group>"; };
+		9B97C2BD206A14C10057A54D /* DesinationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesinationController.m; sourceTree = "<group>"; };
+		9B97C2BE206A14C10057A54D /* DesinationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DesinationController.xib; sourceTree = "<group>"; };
+		9B97C2C1206A14EF0057A54D /* CommunityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityController.h; sourceTree = "<group>"; };
+		9B97C2C2206A14EF0057A54D /* CommunityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityController.m; sourceTree = "<group>"; };
+		9B97C2C3206A14EF0057A54D /* CommunityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityController.xib; sourceTree = "<group>"; };
+		9B97C2C6206A15210057A54D /* MineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineController.h; sourceTree = "<group>"; };
+		9B97C2C7206A15210057A54D /* MineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineController.m; sourceTree = "<group>"; };
+		9B97C2C8206A15210057A54D /* MineController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineController.xib; sourceTree = "<group>"; };
+		9B97C2CC206A15700057A54D /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
+		9B97C2CD206A15700057A54D /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -5287,6 +5305,7 @@
 		9B97B3432069E1260057A54D /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				9B97C2CB206A15410057A54D /* Public */,
 				9B97B3512069E2390057A54D /* Recommend */,
 				9B97B34D2069E2390057A54D /* Destination */,
 				9B97B3452069E2390057A54D /* Community */,
@@ -5312,9 +5331,9 @@
 		9B97B3452069E2390057A54D /* Community */ = {
 			isa = PBXGroup;
 			children = (
+				9B97B3482069E2390057A54D /* ViewController */,
 				9B97B3462069E2390057A54D /* Model */,
 				9B97B3472069E2390057A54D /* View */,
-				9B97B3482069E2390057A54D /* ViewController */,
 			);
 			path = Community;
 			sourceTree = "<group>";
@@ -5336,6 +5355,9 @@
 		9B97B3482069E2390057A54D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9B97C2C1206A14EF0057A54D /* CommunityController.h */,
+				9B97C2C2206A14EF0057A54D /* CommunityController.m */,
+				9B97C2C3206A14EF0057A54D /* CommunityController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -5343,9 +5365,9 @@
 		9B97B3492069E2390057A54D /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				9B97B34C2069E2390057A54D /* ViewController */,
 				9B97B34A2069E2390057A54D /* Model */,
 				9B97B34B2069E2390057A54D /* View */,
-				9B97B34C2069E2390057A54D /* ViewController */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -5367,6 +5389,9 @@
 		9B97B34C2069E2390057A54D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9B97C2C6206A15210057A54D /* MineController.h */,
+				9B97C2C7206A15210057A54D /* MineController.m */,
+				9B97C2C8206A15210057A54D /* MineController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -5398,6 +5423,9 @@
 		9B97B3502069E2390057A54D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9B97C2BC206A14C10057A54D /* DesinationController.h */,
+				9B97C2BD206A14C10057A54D /* DesinationController.m */,
+				9B97C2BE206A14C10057A54D /* DesinationController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -7452,6 +7480,15 @@
 			path = SC_Info;
 			sourceTree = "<group>";
 		};
+		9B97C2CB206A15410057A54D /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				9B97C2CC206A15700057A54D /* CustomTabBarController.h */,
+				9B97C2CD206A15700057A54D /* CustomTabBarController.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -8181,6 +8218,7 @@
 				9B97C1082069F6AF0057A54D /* QYOProduct_Num_Background@2x.png in Resources */,
 				9B97BF322069F6AE0057A54D /* new_half_Star_small.png in Resources */,
 				9B97BE382069F6AE0057A54D /* map_poi_Seleted_pin.png in Resources */,
+				9B97C2C5206A14EF0057A54D /* CommunityController.xib in Resources */,
 				9B97BEC62069F6AE0057A54D /* Mine_Arrow@2x.png in Resources */,
 				9B97BC172069F6AD0057A54D /* Destination_Oceania_Highlight@2x.png in Resources */,
 				9B97BF412069F6AE0057A54D /* new_search_icon_w@2x.png in Resources */,
@@ -8742,6 +8780,7 @@
 				9B97BBDC2069F6AD0057A54D /* companions_addressIcon.png in Resources */,
 				9B97C11D2069F6AF0057A54D /* QYOweixin_icon.png in Resources */,
 				9B97C22B2069F6AF0057A54D /* TabBar_Shop@2x.png in Resources */,
+				9B97C2C0206A14C10057A54D /* DesinationController.xib in Resources */,
 				9B97C1A02069F6AF0057A54D /* setUp_account@2x.png in Resources */,
 				9B97C0E82069F6AF0057A54D /* QYOCoupon_Arrow_Down@2x.png in Resources */,
 				9B97C1EB2069F6AF0057A54D /* shop_normal@2x.png in Resources */,
@@ -9029,6 +9068,7 @@
 				9B97BC092069F6AD0057A54D /* Destination_Cell_Mask@3x.png in Resources */,
 				9B97C2262069F6AF0057A54D /* TabBar_Recommend.png in Resources */,
 				9B97BEAD2069F6AE0057A54D /* message_icon@2x.png in Resources */,
+				9B97C2CA206A15210057A54D /* MineController.xib in Resources */,
 				9B97BC112069F6AD0057A54D /* Destination_NA@2x.png in Resources */,
 				9B97BBCE2069F6AD0057A54D /* communityHome_Companions_icon.png in Resources */,
 				9B97C29F2069F6B00057A54D /* 日本.png in Resources */,
@@ -9484,6 +9524,7 @@
 			files = (
 				9B97B29E2069E0800057A54D /* SVIndefiniteAnimatedView.m in Sources */,
 				9B97B26E2069E0800057A54D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				9B97C2CE206A15700057A54D /* CustomTabBarController.m in Sources */,
 				9B97B2FE2069E0880057A54D /* POPVector.mm in Sources */,
 				9B97B2822069E0800057A54D /* NSBundle+MJRefresh.m in Sources */,
 				9B97B27F2069E0800057A54D /* MJRefreshStateHeader.m in Sources */,
@@ -9523,6 +9564,7 @@
 				9B97B33F2069E0960057A54D /* UITextField+DatePicker.m in Sources */,
 				9B97B2AA2069E0800057A54D /* NSString+PinYin4Cocoa.m in Sources */,
 				9B97B2682069E0800057A54D /* MASConstraint.m in Sources */,
+				9B97C2C4206A14EF0057A54D /* CommunityController.m in Sources */,
 				9B97B2622069E0800057A54D /* JSONModel+networking.m in Sources */,
 				9B97B29C2069E0800057A54D /* UIImageView+WebCache.m in Sources */,
 				9B97B2F62069E0880057A54D /* POPCGUtils.mm in Sources */,
@@ -9663,6 +9705,7 @@
 				9B97B2992069E0800057A54D /* UIImage+MultiFormat.m in Sources */,
 				9B97B27C2069E0800057A54D /* MJRefreshBackStateFooter.m in Sources */,
 				9B97B2EE2069E0880057A54D /* POPAnimatableProperty.mm in Sources */,
+				9B97C2BF206A14C10057A54D /* DesinationController.m in Sources */,
 				9B97B2722069E0800057A54D /* MJRefreshAutoFooter.m in Sources */,
 				9B97B3322069E0960057A54D /* NSString+Chinese.m in Sources */,
 				9B97B2702069E0800057A54D /* ViewController+MASAdditions.m in Sources */,
@@ -9673,6 +9716,7 @@
 				9B97B2F92069E0880057A54D /* POPGeometry.mm in Sources */,
 				9B97B2F02069E0880057A54D /* POPAnimationEvent.mm in Sources */,
 				9B97B2232069E0800057A54D /* AFImageDownloader.m in Sources */,
+				9B97C2C9206A15210057A54D /* MineController.m in Sources */,
 				9B97B2A12069E0800057A54D /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
