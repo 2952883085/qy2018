@@ -12,6 +12,7 @@
 #import "TravelShopController.h"
 #import "CommunityController.h"
 #import "MineController.h"
+#import "CustomTabBar.h"
 @interface CustomTabBarController ()
 
 @end
@@ -40,6 +41,7 @@
     MineController *ctl5=[[MineController alloc]init];
     [self childCtl:ctl5 normalImageName:@"TabBar_Mine" selectedImageName:@"TabBar_Mine_Highlight"];
     
+    
 }
 
 -(void)childCtl:(UIViewController *)childCtl normalImageName:(NSString *)normalImageName selectedImageName:(NSString *)selectedImageName{
@@ -49,7 +51,28 @@
         childCtl.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"" image:[[UIImage imageNamed:normalImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     }
     [self addChildViewController:nav];
+    
+    [self setTabBar];
 
+}
+
+-(void)setTabBar{
+    CustomTabBar *tb=[[CustomTabBar alloc]init];
+    //系统tabBar为只读属性，要更改需用KVC方式
+    [self setValue:tb forKey:@"tabBar"];
+    CGSize size = CGSizeMake(tb.xmg_width/5, tb.xmg_height);
+    tb.selectionIndicatorImage=[self drawTabBarItemBackgroundImageWithSize:size];
+}
+
+//绘制item背景图片
+-(UIImage *)drawTabBarItemBackgroundImageWithSize:(CGSize)size{
+    UIGraphicsBeginImageContext(size);
+    CGContextRef ctx=UIGraphicsGetCurrentContext();
+    CGContextSetRGBFillColor(ctx, 239.0/255, 21.0/255, 75.0/255, 1);
+    CGContextFillRect(ctx, CGRectMake(0,0, size.width, size.height));
+    UIImage *img=UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
 }
 
 @end

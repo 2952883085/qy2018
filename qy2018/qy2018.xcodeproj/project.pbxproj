@@ -2170,6 +2170,8 @@
 		9B97C2CE206A15700057A54D /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2CD206A15700057A54D /* CustomTabBarController.m */; };
 		9B97C2DB206A16A50057A54D /* TravelShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2D9206A16A50057A54D /* TravelShopController.m */; };
 		9B97C2DC206A16A50057A54D /* TravelShopController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B97C2DA206A16A50057A54D /* TravelShopController.xib */; };
+		9B97C2DF206A1EFB0057A54D /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2DE206A1EFB0057A54D /* CustomTabBar.m */; };
+		9B97C2E2206A38180057A54D /* RecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2E1206A38180057A54D /* RecommendModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -4565,6 +4567,10 @@
 		9B97C2D8206A16A50057A54D /* TravelShopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelShopController.h; sourceTree = "<group>"; };
 		9B97C2D9206A16A50057A54D /* TravelShopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelShopController.m; sourceTree = "<group>"; };
 		9B97C2DA206A16A50057A54D /* TravelShopController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelShopController.xib; sourceTree = "<group>"; };
+		9B97C2DD206A1EFB0057A54D /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
+		9B97C2DE206A1EFB0057A54D /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
+		9B97C2E0206A38180057A54D /* RecommendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendModel.h; sourceTree = "<group>"; };
+		9B97C2E1206A38180057A54D /* RecommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -5449,6 +5455,8 @@
 		9B97B3522069E2390057A54D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9B97C2E0206A38180057A54D /* RecommendModel.h */,
+				9B97C2E1206A38180057A54D /* RecommendModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -7491,6 +7499,8 @@
 			children = (
 				9B97C2CC206A15700057A54D /* CustomTabBarController.h */,
 				9B97C2CD206A15700057A54D /* CustomTabBarController.m */,
+				9B97C2DD206A1EFB0057A54D /* CustomTabBar.h */,
+				9B97C2DE206A1EFB0057A54D /* CustomTabBar.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -9595,6 +9605,7 @@
 				9B97B2472069E0800057A54D /* DGActivityIndicatorFiveDotsAnimation.m in Sources */,
 				9B97B3692069E6360057A54D /* PPNetworkHelper.m in Sources */,
 				9B97B2212069E0800057A54D /* README.md in Sources */,
+				9B97C2DF206A1EFB0057A54D /* CustomTabBar.m in Sources */,
 				9B97B29A2069E0800057A54D /* UIImage+WebP.m in Sources */,
 				9B97B2A52069E0800057A54D /* YYKVStorage.m in Sources */,
 				9B97B2952069E0800057A54D /* SDWebImageManager.m in Sources */,
@@ -9607,6 +9618,7 @@
 				9B97B2682069E0800057A54D /* MASConstraint.m in Sources */,
 				9B97C2C4206A14EF0057A54D /* CommunityController.m in Sources */,
 				9B97B2622069E0800057A54D /* JSONModel+networking.m in Sources */,
+				9B97C2E2206A38180057A54D /* RecommendModel.m in Sources */,
 				9B97B29C2069E0800057A54D /* UIImageView+WebCache.m in Sources */,
 				9B97B2F62069E0880057A54D /* POPCGUtils.mm in Sources */,
 				9B97B23A2069E0800057A54D /* DGActivityIndicatorBallPulseAnimation.m in Sources */,
