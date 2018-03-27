@@ -9,7 +9,9 @@
 #import "CustomTabBarController.h"
 #import "RecommendController.h"
 #import "DesinationController.h"
+#import "TravelShopController.h"
 #import "CommunityController.h"
+#import "MineController.h"
 @interface CustomTabBarController ()
 
 @end
@@ -18,22 +20,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self addChildCtl];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark -添加子控制器
+-(void)addChildCtl{
+    RecommendController *ctl1=[[RecommendController alloc]init];
+    [self childCtl:ctl1 normalImageName:@"TabBar_Recommend" selectedImageName:@"TabBar_Recommend_Highlight"];
+    
+    DesinationController *ctl2=[[DesinationController alloc]init];
+    [self childCtl:ctl2 normalImageName:@"TabBar_Place" selectedImageName:@"TabBar_Place_Highlight"];
+    
+    TravelShopController *ctl3=[[TravelShopController alloc]init];
+    [self childCtl:ctl3 normalImageName:@"TabBar_Shop" selectedImageName:@"TabBar_Shop_Highlight"];
+    
+    CommunityController *ctl4=[[CommunityController alloc]init];
+    [self childCtl:ctl4 normalImageName:@"TabBar_Community" selectedImageName:@"TabBar_Community_Highlight"];
+    
+    MineController *ctl5=[[MineController alloc]init];
+    [self childCtl:ctl5 normalImageName:@"TabBar_Mine" selectedImageName:@"TabBar_Mine_Highlight"];
+    
 }
 
-/*
-#pragma mark - Navigation
+-(void)childCtl:(UIViewController *)childCtl normalImageName:(NSString *)normalImageName selectedImageName:(NSString *)selectedImageName{
+    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:childCtl];
+    nav.navigationBarHidden=YES;
+    if(normalImageName.length || selectedImageName.length){
+        childCtl.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"" image:[[UIImage imageNamed:normalImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    }
+    [self addChildViewController:nav];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
 
 @end

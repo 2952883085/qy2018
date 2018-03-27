@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "CustomTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor=[UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    CustomTabBarController *tabBarCtl=[[CustomTabBarController alloc]init];
+    self.window.rootViewController=tabBarCtl;
     return YES;
 }
 
@@ -26,6 +31,10 @@
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 }
 
+
+-(void)applicationDidReceiveMemoryWarning:(UIApplication *)application{
+    NSLog(@"内存不够，需要清理内存");
+}
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
