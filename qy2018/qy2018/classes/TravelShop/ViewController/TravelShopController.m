@@ -1,24 +1,22 @@
 //
-//  CustomTabBarController.m
+//  TravelShopController.m
 //  qy2018
 //
 //  Created by zxy on 2018/3/27.
 //  Copyright © 2018年 foxconn. All rights reserved.
 //
 
-#import "CustomTabBarController.h"
-#import "RecommendController.h"
-#import "DesinationController.h"
-#import "CommunityController.h"
-@interface CustomTabBarController ()
+#import "TravelShopController.h"
+
+@interface TravelShopController ()
 
 @end
 
-@implementation CustomTabBarController
+@implementation TravelShopController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

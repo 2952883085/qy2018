@@ -2168,6 +2168,8 @@
 		9B97C2C9206A15210057A54D /* MineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2C7206A15210057A54D /* MineController.m */; };
 		9B97C2CA206A15210057A54D /* MineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B97C2C8206A15210057A54D /* MineController.xib */; };
 		9B97C2CE206A15700057A54D /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2CD206A15700057A54D /* CustomTabBarController.m */; };
+		9B97C2DB206A16A50057A54D /* TravelShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2D9206A16A50057A54D /* TravelShopController.m */; };
+		9B97C2DC206A16A50057A54D /* TravelShopController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B97C2DA206A16A50057A54D /* TravelShopController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -4560,6 +4562,9 @@
 		9B97C2C8206A15210057A54D /* MineController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineController.xib; sourceTree = "<group>"; };
 		9B97C2CC206A15700057A54D /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
 		9B97C2CD206A15700057A54D /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
+		9B97C2D8206A16A50057A54D /* TravelShopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelShopController.h; sourceTree = "<group>"; };
+		9B97C2D9206A16A50057A54D /* TravelShopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelShopController.m; sourceTree = "<group>"; };
+		9B97C2DA206A16A50057A54D /* TravelShopController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelShopController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -5308,6 +5313,7 @@
 				9B97C2CB206A15410057A54D /* Public */,
 				9B97B3512069E2390057A54D /* Recommend */,
 				9B97B34D2069E2390057A54D /* Destination */,
+				9B97C2CF206A16690057A54D /* TravelShop */,
 				9B97B3452069E2390057A54D /* Community */,
 				9B97B3492069E2390057A54D /* Mine */,
 			);
@@ -7489,6 +7495,40 @@
 			path = Public;
 			sourceTree = "<group>";
 		};
+		9B97C2CF206A16690057A54D /* TravelShop */ = {
+			isa = PBXGroup;
+			children = (
+				9B97C2D2206A16690057A54D /* ViewController */,
+				9B97C2D0206A16690057A54D /* Model */,
+				9B97C2D1206A16690057A54D /* View */,
+			);
+			path = TravelShop;
+			sourceTree = "<group>";
+		};
+		9B97C2D0206A16690057A54D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B97C2D1206A16690057A54D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9B97C2D2206A16690057A54D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9B97C2D8206A16A50057A54D /* TravelShopController.h */,
+				9B97C2D9206A16A50057A54D /* TravelShopController.m */,
+				9B97C2DA206A16A50057A54D /* TravelShopController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -9123,6 +9163,7 @@
 				9B97BF8A2069F6AE0057A54D /* otw_together.png in Resources */,
 				9B97C0232069F6AF0057A54D /* poiRouteIcon@2x.png in Resources */,
 				9B97C15F2069F6AF0057A54D /* QYWeixin.png in Resources */,
+				9B97C2DC206A16A50057A54D /* TravelShopController.xib in Resources */,
 				9B97BC612069F6AD0057A54D /* discount_icon_6_Disabled.png in Resources */,
 				9B97B22D2069E0800057A54D /* 3.png in Resources */,
 				9B97C0922069F6AF0057A54D /* QYFemale@2x.png in Resources */,
@@ -9671,6 +9712,7 @@
 				9B97B3872069E7820057A54D /* UIView+SDExtension.m in Sources */,
 				9B97B24E2069E0800057A54D /* DGActivityIndicatorRotatingSquaresAnimation.m in Sources */,
 				9B97B2912069E0800057A54D /* SDWebImageCompat.m in Sources */,
+				9B97C2DB206A16A50057A54D /* TravelShopController.m in Sources */,
 				9B97B2412069E0800057A54D /* DGActivityIndicatorBallSpinFadeLoader.m in Sources */,
 				9B97B2FC2069E0880057A54D /* POPPropertyAnimation.mm in Sources */,
 				9B97B2A32069E0800057A54D /* YYCache.m in Sources */,
