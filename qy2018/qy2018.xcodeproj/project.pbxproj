@@ -2172,6 +2172,7 @@
 		9B97C2DC206A16A50057A54D /* TravelShopController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B97C2DA206A16A50057A54D /* TravelShopController.xib */; };
 		9B97C2DF206A1EFB0057A54D /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2DE206A1EFB0057A54D /* CustomTabBar.m */; };
 		9B97C2E2206A38180057A54D /* RecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2E1206A38180057A54D /* RecommendModel.m */; };
+		9B97C2E7206A48C90057A54D /* RecommendHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2E6206A48C90057A54D /* RecommendHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -4571,6 +4572,9 @@
 		9B97C2DE206A1EFB0057A54D /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
 		9B97C2E0206A38180057A54D /* RecommendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendModel.h; sourceTree = "<group>"; };
 		9B97C2E1206A38180057A54D /* RecommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendModel.m; sourceTree = "<group>"; };
+		9B97C2E4206A3CFC0057A54D /* interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = interface.h; sourceTree = "<group>"; };
+		9B97C2E5206A48C90057A54D /* RecommendHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendHeader.h; sourceTree = "<group>"; };
+		9B97C2E6206A48C90057A54D /* RecommendHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -5316,6 +5320,7 @@
 		9B97B3432069E1260057A54D /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				9B97C2E3206A3CB60057A54D /* Config */,
 				9B97C2CB206A15410057A54D /* Public */,
 				9B97B3512069E2390057A54D /* Recommend */,
 				9B97B34D2069E2390057A54D /* Destination */,
@@ -5464,6 +5469,8 @@
 		9B97B3532069E2390057A54D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9B97C2E5206A48C90057A54D /* RecommendHeader.h */,
+				9B97C2E6206A48C90057A54D /* RecommendHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -7537,6 +7544,14 @@
 				9B97C2DA206A16A50057A54D /* TravelShopController.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9B97C2E3206A3CB60057A54D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9B97C2E4206A3CFC0057A54D /* interface.h */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -9716,6 +9731,7 @@
 				9B97B28E2069E0800057A54D /* MKAnnotationView+WebCache.m in Sources */,
 				9B97B2762069E0800057A54D /* MJRefreshHeader.m in Sources */,
 				9B97B3402069E0960057A54D /* UIView+XMGExtension.m in Sources */,
+				9B97C2E7206A48C90057A54D /* RecommendHeader.m in Sources */,
 				9B97B2942069E0800057A54D /* SDWebImageDownloaderOperation.m in Sources */,
 				9B97B2462069E0800057A54D /* DGActivityIndicatorDoubleBounceAnimation.m in Sources */,
 				9B97B25A2069E0800057A54D /* FMResultSet.m in Sources */,

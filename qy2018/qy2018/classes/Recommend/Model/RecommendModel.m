@@ -14,12 +14,24 @@
 }
 @end
 
-@implementation entryModel
+@implementation authorM
++(BOOL)propertyIsOptional:(NSString *)propertyName{
+    return YES;
+}
+@end
+
+@implementation entryM
 +(BOOL)propertyIsOptional:(NSString *)propertyName{
     return YES;
 }
 +(JSONKeyMapper *)keyMapper{
-    return [[JSONKeyMapper alloc]initWithDictionary:@{@"id":@"mid",@"feed.enter":@"enter"}];
+    return [[JSONKeyMapper alloc]initWithDictionary:@{@"id":@"mid"}];
+}
+@end
+
+@implementation feedM
++(BOOL)propertyIsOptional:(NSString *)propertyName{
+    return YES;
 }
 @end
 
