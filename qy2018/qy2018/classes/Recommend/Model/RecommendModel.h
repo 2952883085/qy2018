@@ -38,6 +38,10 @@
 @property(nonatomic,strong)authorM *author;
 @property(nonatomic,copy)NSString *subject;
 @property(nonatomic,copy)NSString *icon_url;
+
+//额外增加的二个属性，用来计算文字高度
+@property(nonatomic,assign)CGFloat titleHeight;
+@property(nonatomic,assign)CGFloat subjectHeight;
 @end
 
 @protocol feedM;

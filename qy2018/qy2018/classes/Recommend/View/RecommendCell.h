@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "RecommendModel.h"
 @interface RecommendCell : UITableViewCell
-
+@property(nonatomic,strong)entryM *model;
 @end

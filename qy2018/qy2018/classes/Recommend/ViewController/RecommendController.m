@@ -9,11 +9,14 @@
 #import "RecommendController.h"
 #import "RecommendHeader.h"
 #import "RecommendModel.h"
-@interface RecommendController (){
+#import "RecommendCell.h"
+static NSString *const recommendCellid = @"recommendCellid";
+@interface RecommendController ()<UITableViewDelegate,UITableViewDataSource>{
     NSInteger _page;
 }
 @property(nonatomic,strong)NSMutableArray *lunboArray;
 @property(nonatomic,strong)NSMutableArray *dataSoure;
+@property(nonatomic,strong)NSMutableArray *heightArray;
 @property (weak, nonatomic) IBOutlet UITableView *tabView;
 @property(nonatomic,strong)RecommendHeader *recommendHeader;
 @property(nonatomic,strong)UILabel *networkLab;
@@ -44,6 +47,13 @@
     return _dataSoure;
 }
 
+-(NSMutableArray *)heightArray{
+    if(!_heightArray){
+        _heightArray=[NSMutableArray array];
+    }
+    return _heightArray;
+}
+
 -(NSMutableArray *)lunboArray{
     if(!_lunboArray){
         _lunboArray=[NSMutableArray array];
@@ -59,6 +69,7 @@
     [self setupHeader];
     [self requestDatas];
 }
+#pragma mark -没有网络提示动画
 -(void)addAnimation{
     POPBasicAnimation *baseAni = [POPBasicAnimation animationWithPropertyNamed:kPOPViewAlpha];
     baseAni.fromValue = @(1);
@@ -82,6 +93,8 @@
            }
            weakself.recommendHeader.lunboArray = weakself.lunboArray;
        }
+       [weakself.dataSoure addObjectsFromArray:model.feed.entry];
+       weakself.tabView.backgroundColor = [UIColor grayColor];
        [weakself.tabView reloadData];
        
    } failure:^(NSError *error) {
@@ -103,6 +116,36 @@
     RecommendHeader *header=[[RecommendHeader alloc]initWithFrame:CGRectMake(0, 0, screenWidth, 200)];
     self.tabView.tableHeaderView=header;
     self.recommendHeader=header;
+    
+    [self.tabView registerNib:[UINib nibWithNibName:@"RecommendCell" bundle:nil] forCellReuseIdentifier:recommendCellid];
+}
+
+#pragma mark -tableviewDataSoure
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.dataSoure.count;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    CGFloat height = 0;
+    if(self.heightArray.count <= indexPath.row){//缓存高度
+        entryM *model = self.dataSoure[indexPath.row];
+        if(model.author.username.length || model.author.pic.length){
+            height = 150 + 20 + 10 + 20 + 15 + model.titleHeight + 15 + model.subjectHeight + 20 + 30 + 20 + 10;
+        }else{
+            height = 150 + 15 + model.titleHeight + 15 + model.subjectHeight + 20 + 30+ 20 + 10;
+        }
+        [self.heightArray addObject:[NSNumber numberWithFloat:height]];
+    }else{//从缓存去高度
+        height = [self.heightArray[indexPath.row] floatValue];
+    }
+    return height;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    RecommendCell *cell = [tableView dequeueReusableCellWithIdentifier:recommendCellid forIndexPath:indexPath];
+    if(self.dataSoure.count){
+        cell.model = self.dataSoure[indexPath.row];
+    }
+    return cell;
 }
 
 @end
