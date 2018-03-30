@@ -27,6 +27,8 @@
     // Initialization code
     self.picImgV.layer.cornerRadius = 20;
     self.picImgV.clipsToBounds = YES;
+    
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 -(void)setModel:(entryM *)model{

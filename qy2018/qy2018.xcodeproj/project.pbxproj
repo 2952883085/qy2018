@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1E7E74206E24F900558D5F /* XmgMjRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E73206E24F900558D5F /* XmgMjRefreshHeader.m */; };
+		9B1E7E77206E260D00558D5F /* XmgMjRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E76206E260D00558D5F /* XmgMjRefreshFooter.m */; };
 		9B2D3557206C994400DFAEEF /* AnimationLoadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D3556206C994400DFAEEF /* AnimationLoadController.m */; };
 		9B2D355B206DBCE300DFAEEF /* RecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D3559206DBCE300DFAEEF /* RecommendCell.m */; };
 		9B2D355C206DBCE300DFAEEF /* RecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2D355A206DBCE300DFAEEF /* RecommendCell.xib */; };
@@ -2179,6 +2181,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B1E7E72206E24F900558D5F /* XmgMjRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmgMjRefreshHeader.h; sourceTree = "<group>"; };
+		9B1E7E73206E24F900558D5F /* XmgMjRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmgMjRefreshHeader.m; sourceTree = "<group>"; };
+		9B1E7E75206E260D00558D5F /* XmgMjRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmgMjRefreshFooter.h; sourceTree = "<group>"; };
+		9B1E7E76206E260D00558D5F /* XmgMjRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmgMjRefreshFooter.m; sourceTree = "<group>"; };
 		9B2D3555206C994400DFAEEF /* AnimationLoadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLoadController.h; sourceTree = "<group>"; };
 		9B2D3556206C994400DFAEEF /* AnimationLoadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationLoadController.m; sourceTree = "<group>"; };
 		9B2D3558206DBCE300DFAEEF /* RecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendCell.h; sourceTree = "<group>"; };
@@ -7521,6 +7527,10 @@
 				9B97C2DE206A1EFB0057A54D /* CustomTabBar.m */,
 				9B2D3555206C994400DFAEEF /* AnimationLoadController.h */,
 				9B2D3556206C994400DFAEEF /* AnimationLoadController.m */,
+				9B1E7E72206E24F900558D5F /* XmgMjRefreshHeader.h */,
+				9B1E7E73206E24F900558D5F /* XmgMjRefreshHeader.m */,
+				9B1E7E75206E260D00558D5F /* XmgMjRefreshFooter.h */,
+				9B1E7E76206E260D00558D5F /* XmgMjRefreshFooter.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -9650,6 +9660,7 @@
 				9B97C2E2206A38180057A54D /* RecommendModel.m in Sources */,
 				9B97B29C2069E0800057A54D /* UIImageView+WebCache.m in Sources */,
 				9B97B2F62069E0880057A54D /* POPCGUtils.mm in Sources */,
+				9B1E7E77206E260D00558D5F /* XmgMjRefreshFooter.m in Sources */,
 				9B97B23A2069E0800057A54D /* DGActivityIndicatorBallPulseAnimation.m in Sources */,
 				9B97B21B2069E0800057A54D /* AFNetworkReachabilityManager.m in Sources */,
 				9B97B2772069E0800057A54D /* MJRefreshAutoGifFooter.m in Sources */,
@@ -9722,6 +9733,7 @@
 				9B97B27D2069E0800057A54D /* MJRefreshGifHeader.m in Sources */,
 				9B97B3332069E0960057A54D /* NSString+CZPath.m in Sources */,
 				9B97B2832069E0800057A54D /* UIScrollView+MJExtension.m in Sources */,
+				9B1E7E74206E24F900558D5F /* XmgMjRefreshHeader.m in Sources */,
 				9B97B2562069E0800057A54D /* FMDatabase.m in Sources */,
 				9B97B2AC2069E0800057A54D /* PinYinForObjc.m in Sources */,
 				9B97B2A72069E0800057A54D /* ChineseInclude.m in Sources */,

@@ -10,6 +10,8 @@
 #import "RecommendHeader.h"
 #import "RecommendModel.h"
 #import "RecommendCell.h"
+#import "XmgMjRefreshHeader.h"
+#import "XmgMjRefreshFooter.h"
 static NSString *const recommendCellid = @"recommendCellid";
 @interface RecommendController ()<UITableViewDelegate,UITableViewDataSource>{
     NSInteger _page;
@@ -68,6 +70,8 @@ static NSString *const recommendCellid = @"recommendCellid";
     [self.view addSubview:self.networkView];
     [self setupHeader];
     [self requestDatas];
+    [self setupMjRefersh];
+    
 }
 #pragma mark -没有网络提示动画
 -(void)addAnimation{
@@ -78,6 +82,25 @@ static NSString *const recommendCellid = @"recommendCellid";
     baseAni.duration = 3;
     [self.networkLab pop_addAnimation:baseAni forKey:@"kalpha"];
 }
+
+#pragma mark -刷新
+-(void)setupMjRefersh{
+    self.tabView.mj_header = [XmgMjRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(downRefresh)];
+    [self.tabView.mj_header beginRefreshing];
+    
+    self.tabView.mj_footer= [XmgMjRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(upRefrsh)];
+}
+
+-(void)downRefresh{
+    _page = 1;
+    [self requestDatas];
+}
+
+-(void)upRefrsh{
+    _page++;
+    [self requestDatas];
+}
+
 #pragma mark -获取数据
 -(void)requestDatas{
     __weak typeof(self) weakself=self;
@@ -87,6 +110,7 @@ static NSString *const recommendCellid = @"recommendCellid";
        [weakself.indicator stopAnimationWithLoadText:@"" withType:YES];
        RecommendModel *model=[[RecommendModel alloc]initWithDictionary:responseObject[@"data"] error:nil];
        if(_page==1){
+           [weakself.lunboArray removeAllObjects];
            for (NSInteger i = 0; i < model.slide.count; i++) {
                lunboModel *m=model.slide[i];
                [weakself.lunboArray addObject:m.photo];
@@ -94,12 +118,19 @@ static NSString *const recommendCellid = @"recommendCellid";
            weakself.recommendHeader.lunboArray = weakself.lunboArray;
        }
        [weakself.dataSoure addObjectsFromArray:model.feed.entry];
-       weakself.tabView.backgroundColor = [UIColor grayColor];
+       weakself.tabView.backgroundColor = [UIColor cz_colorWithHex:0xE6E6E6];
        [weakself.tabView reloadData];
+       if(weakself.tabView.mj_header){
+           [weakself.tabView.mj_header endRefreshing];
+       }
+       if(weakself.tabView.mj_footer){
+           [weakself.tabView.mj_footer endRefreshing];
+       }
        
    } failure:^(NSError *error) {
        NSLog(@"error=%@",error);
-       
+       [weakself.tabView.mj_header endRefreshing];
+       [weakself.tabView.mj_footer endRefreshing];
        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //           weakself.networkView.hidden=NO;
            [weakself.indicator stopAnimationWithLoadText:@"" withType:YES];
@@ -118,6 +149,8 @@ static NSString *const recommendCellid = @"recommendCellid";
     self.recommendHeader=header;
     
     [self.tabView registerNib:[UINib nibWithNibName:@"RecommendCell" bundle:nil] forCellReuseIdentifier:recommendCellid];
+    
+    self.tabView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
 }
 
 #pragma mark -tableviewDataSoure
