@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MineController : UIViewController
+@interface MineController : NavigationBaseController
 
 @end

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B1E7E74206E24F900558D5F /* XmgMjRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E73206E24F900558D5F /* XmgMjRefreshHeader.m */; };
 		9B1E7E77206E260D00558D5F /* XmgMjRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E76206E260D00558D5F /* XmgMjRefreshFooter.m */; };
+		9B1E7E7D206E329100558D5F /* NavigationBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E7C206E329100558D5F /* NavigationBaseController.m */; };
 		9B2D3557206C994400DFAEEF /* AnimationLoadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D3556206C994400DFAEEF /* AnimationLoadController.m */; };
 		9B2D355B206DBCE300DFAEEF /* RecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D3559206DBCE300DFAEEF /* RecommendCell.m */; };
 		9B2D355C206DBCE300DFAEEF /* RecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2D355A206DBCE300DFAEEF /* RecommendCell.xib */; };
@@ -2185,6 +2186,8 @@
 		9B1E7E73206E24F900558D5F /* XmgMjRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmgMjRefreshHeader.m; sourceTree = "<group>"; };
 		9B1E7E75206E260D00558D5F /* XmgMjRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmgMjRefreshFooter.h; sourceTree = "<group>"; };
 		9B1E7E76206E260D00558D5F /* XmgMjRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmgMjRefreshFooter.m; sourceTree = "<group>"; };
+		9B1E7E7B206E329100558D5F /* NavigationBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBaseController.h; sourceTree = "<group>"; };
+		9B1E7E7C206E329100558D5F /* NavigationBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBaseController.m; sourceTree = "<group>"; };
 		9B2D3555206C994400DFAEEF /* AnimationLoadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLoadController.h; sourceTree = "<group>"; };
 		9B2D3556206C994400DFAEEF /* AnimationLoadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationLoadController.m; sourceTree = "<group>"; };
 		9B2D3558206DBCE300DFAEEF /* RecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendCell.h; sourceTree = "<group>"; };
@@ -7531,6 +7534,8 @@
 				9B1E7E73206E24F900558D5F /* XmgMjRefreshHeader.m */,
 				9B1E7E75206E260D00558D5F /* XmgMjRefreshFooter.h */,
 				9B1E7E76206E260D00558D5F /* XmgMjRefreshFooter.m */,
+				9B1E7E7B206E329100558D5F /* NavigationBaseController.h */,
+				9B1E7E7C206E329100558D5F /* NavigationBaseController.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -9807,6 +9812,7 @@
 				9B97B2722069E0800057A54D /* MJRefreshAutoFooter.m in Sources */,
 				9B97B3322069E0960057A54D /* NSString+Chinese.m in Sources */,
 				9B97B2702069E0800057A54D /* ViewController+MASAdditions.m in Sources */,
+				9B1E7E7D206E329100558D5F /* NavigationBaseController.m in Sources */,
 				9B97B25B2069E0800057A54D /* JSONModel.m in Sources */,
 				9B97B2372069E0800057A54D /* DGActivityIndicatorBallClipRotatePulseAnimation.m in Sources */,
 				9B97B2712069E0800057A54D /* README.md in Sources */,

@@ -16,22 +16,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self setupNavigationBar];
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
+#pragma mark -设置导航栏
+-(void)setupNavigationBar{
+    self.navigationItem.title = @"个人中心";
+    UIButton *rightItem = [UIButton cz_textButton:nil fontSize:0 normalColor:nil ImageName:@"QYNavSettingWhite"];
+    [rightItem setImage:[UIImage imageNamed:@"QYNavSettingGreen"] forState:UIControlStateHighlighted];
+    rightItem.frame = CGRectMake(10, 0, 30, 30);
+    [rightItem addTarget:self action:@selector(setBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [view addSubview:rightItem];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:view];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)setBtnClick:(UIButton *)sender{
+    NSLog(@"设置按钮被点击了");
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
