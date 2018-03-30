@@ -31,5 +31,7 @@
 #import "UIImageView+ZXYExtension.h"
 #import "UIView+ZXYAnimation.h"
 #import "FMDB.h"
+#import "AnimationLoadController.h"
+#import "POP.h"
 #endif
 #endif /* PrefixHeader_pch */

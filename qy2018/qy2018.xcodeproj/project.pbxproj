@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B2D3557206C994400DFAEEF /* AnimationLoadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D3556206C994400DFAEEF /* AnimationLoadController.m */; };
 		9B97AED12069DE990057A54D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97AED02069DE990057A54D /* main.m */; };
 		9B97AED42069DE990057A54D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97AED32069DE990057A54D /* AppDelegate.m */; };
 		9B97AEDC2069DE990057A54D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B97AEDB2069DE990057A54D /* Assets.xcassets */; };
@@ -2176,6 +2177,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B2D3555206C994400DFAEEF /* AnimationLoadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLoadController.h; sourceTree = "<group>"; };
+		9B2D3556206C994400DFAEEF /* AnimationLoadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationLoadController.m; sourceTree = "<group>"; };
 		9B97AECC2069DE990057A54D /* qy2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qy2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B97AED02069DE990057A54D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B97AED22069DE990057A54D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -7508,6 +7511,8 @@
 				9B97C2CD206A15700057A54D /* CustomTabBarController.m */,
 				9B97C2DD206A1EFB0057A54D /* CustomTabBar.h */,
 				9B97C2DE206A1EFB0057A54D /* CustomTabBar.m */,
+				9B2D3555206C994400DFAEEF /* AnimationLoadController.h */,
+				9B2D3556206C994400DFAEEF /* AnimationLoadController.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -9650,6 +9655,7 @@
 				9B97B2332069E0800057A54D /* DALabeledCircularProgressView.m in Sources */,
 				9B97B23F2069E0800057A54D /* DGActivityIndicatorBallScaleRippleAnimation.m in Sources */,
 				9B97AED12069DE990057A54D /* main.m in Sources */,
+				9B2D3557206C994400DFAEEF /* AnimationLoadController.m in Sources */,
 				9B97B2252069E0800057A54D /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				9B97B2572069E0800057A54D /* FMDatabaseAdditions.m in Sources */,
 				9B97B2692069E0800057A54D /* MASConstraintMaker.m in Sources */,

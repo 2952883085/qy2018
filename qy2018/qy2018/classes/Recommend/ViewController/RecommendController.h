@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RecommendController : UIViewController
+@interface RecommendController : AnimationLoadController
 
 @end
