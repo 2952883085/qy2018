@@ -10,6 +10,7 @@
 		9B1E7E74206E24F900558D5F /* XmgMjRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E73206E24F900558D5F /* XmgMjRefreshHeader.m */; };
 		9B1E7E77206E260D00558D5F /* XmgMjRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E76206E260D00558D5F /* XmgMjRefreshFooter.m */; };
 		9B1E7E7D206E329100558D5F /* NavigationBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E7C206E329100558D5F /* NavigationBaseController.m */; };
+		9B1E7E81206E433C00558D5F /* DataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E80206E433C00558D5F /* DataBaseManager.m */; };
 		9B2D3557206C994400DFAEEF /* AnimationLoadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D3556206C994400DFAEEF /* AnimationLoadController.m */; };
 		9B2D355B206DBCE300DFAEEF /* RecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D3559206DBCE300DFAEEF /* RecommendCell.m */; };
 		9B2D355C206DBCE300DFAEEF /* RecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2D355A206DBCE300DFAEEF /* RecommendCell.xib */; };
@@ -2188,6 +2189,8 @@
 		9B1E7E76206E260D00558D5F /* XmgMjRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmgMjRefreshFooter.m; sourceTree = "<group>"; };
 		9B1E7E7B206E329100558D5F /* NavigationBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBaseController.h; sourceTree = "<group>"; };
 		9B1E7E7C206E329100558D5F /* NavigationBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBaseController.m; sourceTree = "<group>"; };
+		9B1E7E7F206E433C00558D5F /* DataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseManager.h; sourceTree = "<group>"; };
+		9B1E7E80206E433C00558D5F /* DataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseManager.m; sourceTree = "<group>"; };
 		9B2D3555206C994400DFAEEF /* AnimationLoadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLoadController.h; sourceTree = "<group>"; };
 		9B2D3556206C994400DFAEEF /* AnimationLoadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationLoadController.m; sourceTree = "<group>"; };
 		9B2D3558206DBCE300DFAEEF /* RecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendCell.h; sourceTree = "<group>"; };
@@ -4606,6 +4609,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B1E7E7E206E433C00558D5F /* 数据库 */ = {
+			isa = PBXGroup;
+			children = (
+				9B1E7E7F206E433C00558D5F /* DataBaseManager.h */,
+				9B1E7E80206E433C00558D5F /* DataBaseManager.m */,
+			);
+			path = "数据库";
+			sourceTree = "<group>";
+		};
 		9B97AEC32069DE980057A54D = {
 			isa = PBXGroup;
 			children = (
@@ -5337,6 +5349,7 @@
 		9B97B3432069E1260057A54D /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				9B1E7E7E206E433C00558D5F /* 数据库 */,
 				9B97C2E3206A3CB60057A54D /* Config */,
 				9B97C2CB206A15410057A54D /* Public */,
 				9B97B3512069E2390057A54D /* Recommend */,
@@ -9681,6 +9694,7 @@
 				9B97B23F2069E0800057A54D /* DGActivityIndicatorBallScaleRippleAnimation.m in Sources */,
 				9B97AED12069DE990057A54D /* main.m in Sources */,
 				9B2D3557206C994400DFAEEF /* AnimationLoadController.m in Sources */,
+				9B1E7E81206E433C00558D5F /* DataBaseManager.m in Sources */,
 				9B97B2252069E0800057A54D /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				9B97B2572069E0800057A54D /* FMDatabaseAdditions.m in Sources */,
 				9B97B2692069E0800057A54D /* MASConstraintMaker.m in Sources */,
