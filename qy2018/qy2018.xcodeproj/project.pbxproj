@@ -11,6 +11,8 @@
 		9B1E7E77206E260D00558D5F /* XmgMjRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E76206E260D00558D5F /* XmgMjRefreshFooter.m */; };
 		9B1E7E7D206E329100558D5F /* NavigationBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E7C206E329100558D5F /* NavigationBaseController.m */; };
 		9B1E7E81206E433C00558D5F /* DataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E80206E433C00558D5F /* DataBaseManager.m */; };
+		9B1E7E842071B65D00558D5F /* LoginHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E832071B65D00558D5F /* LoginHeader.m */; };
+		9B1E7E862071B70900558D5F /* LoginHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B1E7E852071B70900558D5F /* LoginHeader.xib */; };
 		9B2D3557206C994400DFAEEF /* AnimationLoadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D3556206C994400DFAEEF /* AnimationLoadController.m */; };
 		9B2D355B206DBCE300DFAEEF /* RecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D3559206DBCE300DFAEEF /* RecommendCell.m */; };
 		9B2D355C206DBCE300DFAEEF /* RecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2D355A206DBCE300DFAEEF /* RecommendCell.xib */; };
@@ -2191,6 +2193,9 @@
 		9B1E7E7C206E329100558D5F /* NavigationBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBaseController.m; sourceTree = "<group>"; };
 		9B1E7E7F206E433C00558D5F /* DataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseManager.h; sourceTree = "<group>"; };
 		9B1E7E80206E433C00558D5F /* DataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseManager.m; sourceTree = "<group>"; };
+		9B1E7E822071B65D00558D5F /* LoginHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginHeader.h; sourceTree = "<group>"; };
+		9B1E7E832071B65D00558D5F /* LoginHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginHeader.m; sourceTree = "<group>"; };
+		9B1E7E852071B70900558D5F /* LoginHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginHeader.xib; sourceTree = "<group>"; };
 		9B2D3555206C994400DFAEEF /* AnimationLoadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLoadController.h; sourceTree = "<group>"; };
 		9B2D3556206C994400DFAEEF /* AnimationLoadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationLoadController.m; sourceTree = "<group>"; };
 		9B2D3558206DBCE300DFAEEF /* RecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendCell.h; sourceTree = "<group>"; };
@@ -5429,6 +5434,9 @@
 		9B97B34B2069E2390057A54D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9B1E7E822071B65D00558D5F /* LoginHeader.h */,
+				9B1E7E832071B65D00558D5F /* LoginHeader.m */,
+				9B1E7E852071B70900558D5F /* LoginHeader.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -8669,6 +8677,7 @@
 				9B97B2302069E0800057A54D /* 6.png in Resources */,
 				9B97BF982069F6AE0057A54D /* OTWRecommended@2x.png in Resources */,
 				9B97BBEB2069F6AD0057A54D /* Confirm_Btn_Pressed@2x.png in Resources */,
+				9B1E7E862071B70900558D5F /* LoginHeader.xib in Resources */,
 				9B97BB8F2069F6AC0057A54D /* city_iconPoi.png in Resources */,
 				9B97C0E32069F6AF0057A54D /* QYOclose_default.png in Resources */,
 				9B97BFF72069F6AE0057A54D /* Poi_Share.png in Resources */,
@@ -9750,6 +9759,7 @@
 				9B97B2A42069E0800057A54D /* YYDiskCache.m in Sources */,
 				9B97B38E2069EFE70057A54D /* RecommendController.m in Sources */,
 				9B97B27D2069E0800057A54D /* MJRefreshGifHeader.m in Sources */,
+				9B1E7E842071B65D00558D5F /* LoginHeader.m in Sources */,
 				9B97B3332069E0960057A54D /* NSString+CZPath.m in Sources */,
 				9B97B2832069E0800057A54D /* UIScrollView+MJExtension.m in Sources */,
 				9B1E7E74206E24F900558D5F /* XmgMjRefreshHeader.m in Sources */,

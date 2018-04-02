@@ -93,7 +93,7 @@
         mode.subject=[set stringForColumn:@"subject"] ;
         mode.url=[set stringForColumn:@"subject"];
         mode.icon_url=[set stringForColumn:@"icon_url"];
-        mode.author=[set stringForColumn:@"subject"];
+//        mode.author=[set stringForColumn:@"subject"];
         [muArr addObject:mode];
     }
     return muArr;

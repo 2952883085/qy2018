@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface NavigationBaseController : UIViewController
-
+@property(nonatomic,strong)UITableView *tabView;
 @end
