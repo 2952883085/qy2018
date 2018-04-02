@@ -8,7 +8,7 @@
 
 #import "NavigationBaseController.h"
 
-@interface NavigationBaseController ()<UITableViewDelegate,UITableViewDataSource>
+@interface NavigationBaseController ()
 
 @end
 
@@ -22,7 +22,9 @@
 
 -(UITableView *)tabView{
     if(!_tabView){
-        _tabView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, screenWidth, screenWidth - 64) style:UITableViewStylePlain];
+        _tabView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, screenWidth, screenHeight - 64) style:UITableViewStylePlain];
+        _tabView.dataSource = self;
+        _tabView.delegate = self;
         [self.view addSubview:_tabView];
     }
     return _tabView;

@@ -1,5 +1,5 @@
 //
-//  LoginHeader.h
+//  MineCell.h
 //  qy2018
 //
 //  Created by zxy on 2018/4/2.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginHeader : UIView
-+(instancetype)loginHeader;
+@interface MineCell : UITableViewCell
+
 @end

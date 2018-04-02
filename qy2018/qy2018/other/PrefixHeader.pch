@@ -34,5 +34,6 @@
 #import "AnimationLoadController.h"
 #import "POP.h"
 #import "NavigationBaseController.h"
+#import "UIScrollView+HeaderScaleImage.h"
 #endif
 #endif /* PrefixHeader_pch */

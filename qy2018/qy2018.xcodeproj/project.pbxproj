@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B06EE7420722F6000F40226 /* MineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B06EE7220722F5F00F40226 /* MineCell.m */; };
+		9B06EE7520722F6000F40226 /* MineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B06EE7320722F5F00F40226 /* MineCell.xib */; };
 		9B1E7E74206E24F900558D5F /* XmgMjRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E73206E24F900558D5F /* XmgMjRefreshHeader.m */; };
 		9B1E7E77206E260D00558D5F /* XmgMjRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E76206E260D00558D5F /* XmgMjRefreshFooter.m */; };
 		9B1E7E7D206E329100558D5F /* NavigationBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E7C206E329100558D5F /* NavigationBaseController.m */; };
 		9B1E7E81206E433C00558D5F /* DataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E80206E433C00558D5F /* DataBaseManager.m */; };
 		9B1E7E842071B65D00558D5F /* LoginHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E832071B65D00558D5F /* LoginHeader.m */; };
 		9B1E7E862071B70900558D5F /* LoginHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B1E7E852071B70900558D5F /* LoginHeader.xib */; };
+		9B1E7E892071B9C500558D5F /* ImageTopTitleBottomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E882071B9C500558D5F /* ImageTopTitleBottomButton.m */; };
 		9B2D3557206C994400DFAEEF /* AnimationLoadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D3556206C994400DFAEEF /* AnimationLoadController.m */; };
 		9B2D355B206DBCE300DFAEEF /* RecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D3559206DBCE300DFAEEF /* RecommendCell.m */; };
 		9B2D355C206DBCE300DFAEEF /* RecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2D355A206DBCE300DFAEEF /* RecommendCell.xib */; };
@@ -2185,6 +2188,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B06EE7120722F5F00F40226 /* MineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineCell.h; sourceTree = "<group>"; };
+		9B06EE7220722F5F00F40226 /* MineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineCell.m; sourceTree = "<group>"; };
+		9B06EE7320722F5F00F40226 /* MineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineCell.xib; sourceTree = "<group>"; };
 		9B1E7E72206E24F900558D5F /* XmgMjRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmgMjRefreshHeader.h; sourceTree = "<group>"; };
 		9B1E7E73206E24F900558D5F /* XmgMjRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmgMjRefreshHeader.m; sourceTree = "<group>"; };
 		9B1E7E75206E260D00558D5F /* XmgMjRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmgMjRefreshFooter.h; sourceTree = "<group>"; };
@@ -2196,6 +2202,8 @@
 		9B1E7E822071B65D00558D5F /* LoginHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginHeader.h; sourceTree = "<group>"; };
 		9B1E7E832071B65D00558D5F /* LoginHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginHeader.m; sourceTree = "<group>"; };
 		9B1E7E852071B70900558D5F /* LoginHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginHeader.xib; sourceTree = "<group>"; };
+		9B1E7E872071B9C500558D5F /* ImageTopTitleBottomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTopTitleBottomButton.h; sourceTree = "<group>"; };
+		9B1E7E882071B9C500558D5F /* ImageTopTitleBottomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTopTitleBottomButton.m; sourceTree = "<group>"; };
 		9B2D3555206C994400DFAEEF /* AnimationLoadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLoadController.h; sourceTree = "<group>"; };
 		9B2D3556206C994400DFAEEF /* AnimationLoadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationLoadController.m; sourceTree = "<group>"; };
 		9B2D3558206DBCE300DFAEEF /* RecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendCell.h; sourceTree = "<group>"; };
@@ -5437,6 +5445,9 @@
 				9B1E7E822071B65D00558D5F /* LoginHeader.h */,
 				9B1E7E832071B65D00558D5F /* LoginHeader.m */,
 				9B1E7E852071B70900558D5F /* LoginHeader.xib */,
+				9B06EE7120722F5F00F40226 /* MineCell.h */,
+				9B06EE7220722F5F00F40226 /* MineCell.m */,
+				9B06EE7320722F5F00F40226 /* MineCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -7557,6 +7568,8 @@
 				9B1E7E76206E260D00558D5F /* XmgMjRefreshFooter.m */,
 				9B1E7E7B206E329100558D5F /* NavigationBaseController.h */,
 				9B1E7E7C206E329100558D5F /* NavigationBaseController.m */,
+				9B1E7E872071B9C500558D5F /* ImageTopTitleBottomButton.h */,
+				9B1E7E882071B9C500558D5F /* ImageTopTitleBottomButton.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -9364,6 +9377,7 @@
 				9B97BB2C2069F6AC0057A54D /* actionsheet_cancel@2x.png in Resources */,
 				9B97C1062069F6AF0057A54D /* QYOProduct_Close_Btn@2x.png in Resources */,
 				9B97BB9C2069F6AD0057A54D /* City_Want@2x.png in Resources */,
+				9B06EE7520722F6000F40226 /* MineCell.xib in Resources */,
 				9B97C0882069F6AF0057A54D /* QYDiscountTipClose@2x.png in Resources */,
 				9B97BD132069F6AD0057A54D /* HomePage_DefaultAvatar_12@2x.png in Resources */,
 				9B97BD2D2069F6AD0057A54D /* HomePage_DefaultAvatar_7.png in Resources */,
@@ -9686,6 +9700,7 @@
 				9B97B2622069E0800057A54D /* JSONModel+networking.m in Sources */,
 				9B97C2E2206A38180057A54D /* RecommendModel.m in Sources */,
 				9B97B29C2069E0800057A54D /* UIImageView+WebCache.m in Sources */,
+				9B1E7E892071B9C500558D5F /* ImageTopTitleBottomButton.m in Sources */,
 				9B97B2F62069E0880057A54D /* POPCGUtils.mm in Sources */,
 				9B1E7E77206E260D00558D5F /* XmgMjRefreshFooter.m in Sources */,
 				9B97B23A2069E0800057A54D /* DGActivityIndicatorBallPulseAnimation.m in Sources */,
@@ -9745,6 +9760,7 @@
 				9B97B32F2069E0960057A54D /* NSDate+String.m in Sources */,
 				9B97B2262069E0800057A54D /* UIButton+AFNetworking.m in Sources */,
 				9B97B29B2069E0800057A54D /* UIImageView+HighlightedWebCache.m in Sources */,
+				9B06EE7420722F6000F40226 /* MineCell.m in Sources */,
 				9B97B24A2069E0800057A54D /* DGActivityIndicatorLineScalePulseOutAnimation.m in Sources */,
 				9B97B2552069E0800057A54D /* DGActivityIndicatorView.m in Sources */,
 				9B97B25F2069E0800057A54D /* NSArray+JSONModel.m in Sources */,
