@@ -8,6 +8,7 @@
 
 #import "MineController.h"
 #import "LoginHeader.h"
+#import "MineCell.h"
 @interface MineController ()
 @property(nonatomic,strong)NSArray *imgArray;
 @property(nonatomic,strong)NSArray *titleArray;
@@ -34,6 +35,9 @@
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.tabView.backgroundColor = [UIColor lightGrayColor];
+    [self.tabView registerNib:[UINib nibWithNibName:@"MineCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+    self.tabView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
+    
     [self setupNavigationBar];
     [self setupHeader];
 }
@@ -41,7 +45,9 @@
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = NO;
 }
-
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 10;
+}
 
 #pragma mark -设置导航栏
 -(void)setupNavigationBar{
@@ -71,6 +77,28 @@
 }
 
 #pragma mark -tableviewDataSoure
-
-
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 3;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if(section == 1){
+        return 2;
+    }else{
+        return 3;
+    }
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+     MineCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    if(indexPath.section == 0){
+        cell.imgVIew.image = [UIImage imageNamed:self.imgArray[indexPath.row]];
+        cell.titleL.text = self.titleArray[indexPath.row];
+    }else if (indexPath.section == 1){
+        cell.imgVIew.image = [UIImage imageNamed:self.imgArray[indexPath.row + 3]];
+        cell.titleL.text = self.titleArray[indexPath.row + 3];
+    }else{
+        cell.imgVIew.image = [UIImage imageNamed:self.imgArray[indexPath.row + 5]];
+        cell.titleL.text = self.titleArray[indexPath.row + 5];
+    }
+    return cell;
+}
 @end

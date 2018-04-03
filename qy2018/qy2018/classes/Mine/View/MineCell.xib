@@ -18,14 +18,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dd9-1V-f7s">
-                        <rect key="frame" x="15" y="7" width="30" height="30"/>
+                        <rect key="frame" x="15" y="12" width="20" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="ByB-9b-HMo"/>
-                            <constraint firstAttribute="width" constant="30" id="Q6X-br-Gnn"/>
+                            <constraint firstAttribute="height" constant="20" id="ByB-9b-HMo"/>
+                            <constraint firstAttribute="width" constant="20" id="Q6X-br-Gnn"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的订单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdU-Ci-bip">
-                        <rect key="frame" x="60" y="13" width="57.5" height="17"/>
+                        <rect key="frame" x="50" y="13" width="57.5" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -40,10 +40,14 @@
                     <constraint firstItem="OdU-Ci-bip" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EJJ-nK-zFl"/>
                     <constraint firstAttribute="trailing" secondItem="UIh-Sc-im2" secondAttribute="trailing" constant="15" id="Q7q-fQ-WaN"/>
                     <constraint firstItem="dd9-1V-f7s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Qje-3W-qJB"/>
-                    <constraint firstItem="dd9-1V-f7s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="qwK-bq-Y0e"/>
+                    <constraint firstItem="dd9-1V-f7s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="qwK-bq-Y0e"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="213" y="172"/>
+            <connections>
+                <outlet property="imgVIew" destination="dd9-1V-f7s" id="IKD-eL-ef6"/>
+                <outlet property="titleL" destination="OdU-Ci-bip" id="1iu-XP-M6o"/>
+            </connections>
+            <point key="canvasLocation" x="-37" y="150"/>
         </tableViewCell>
     </objects>
     <resources>

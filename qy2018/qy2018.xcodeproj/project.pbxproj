@@ -2178,7 +2178,6 @@
 		9B97C2C4206A14EF0057A54D /* CommunityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2C2206A14EF0057A54D /* CommunityController.m */; };
 		9B97C2C5206A14EF0057A54D /* CommunityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B97C2C3206A14EF0057A54D /* CommunityController.xib */; };
 		9B97C2C9206A15210057A54D /* MineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2C7206A15210057A54D /* MineController.m */; };
-		9B97C2CA206A15210057A54D /* MineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B97C2C8206A15210057A54D /* MineController.xib */; };
 		9B97C2CE206A15700057A54D /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2CD206A15700057A54D /* CustomTabBarController.m */; };
 		9B97C2DB206A16A50057A54D /* TravelShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2D9206A16A50057A54D /* TravelShopController.m */; };
 		9B97C2DC206A16A50057A54D /* TravelShopController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B97C2DA206A16A50057A54D /* TravelShopController.xib */; };
@@ -4595,7 +4594,6 @@
 		9B97C2C3206A14EF0057A54D /* CommunityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityController.xib; sourceTree = "<group>"; };
 		9B97C2C6206A15210057A54D /* MineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineController.h; sourceTree = "<group>"; };
 		9B97C2C7206A15210057A54D /* MineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineController.m; sourceTree = "<group>"; };
-		9B97C2C8206A15210057A54D /* MineController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineController.xib; sourceTree = "<group>"; };
 		9B97C2CC206A15700057A54D /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
 		9B97C2CD206A15700057A54D /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
 		9B97C2D8206A16A50057A54D /* TravelShopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelShopController.h; sourceTree = "<group>"; };
@@ -5457,7 +5455,6 @@
 			children = (
 				9B97C2C6206A15210057A54D /* MineController.h */,
 				9B97C2C7206A15210057A54D /* MineController.m */,
-				9B97C2C8206A15210057A54D /* MineController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -9197,7 +9194,6 @@
 				9B97BC092069F6AD0057A54D /* Destination_Cell_Mask@3x.png in Resources */,
 				9B97C2262069F6AF0057A54D /* TabBar_Recommend.png in Resources */,
 				9B97BEAD2069F6AE0057A54D /* message_icon@2x.png in Resources */,
-				9B97C2CA206A15210057A54D /* MineController.xib in Resources */,
 				9B97BC112069F6AD0057A54D /* Destination_NA@2x.png in Resources */,
 				9B97BBCE2069F6AD0057A54D /* communityHome_Companions_icon.png in Resources */,
 				9B97C29F2069F6B00057A54D /* 日本.png in Resources */,
