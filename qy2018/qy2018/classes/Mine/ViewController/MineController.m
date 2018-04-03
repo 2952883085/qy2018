@@ -9,6 +9,7 @@
 #import "MineController.h"
 #import "LoginHeader.h"
 #import "MineCell.h"
+#import "SettingController.h"
 @interface MineController ()
 @property(nonatomic,strong)NSArray *imgArray;
 @property(nonatomic,strong)NSArray *titleArray;
@@ -33,7 +34,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.automaticallyAdjustsScrollViewInsets = NO;
     self.tabView.backgroundColor = [UIColor lightGrayColor];
     [self.tabView registerNib:[UINib nibWithNibName:@"MineCell" bundle:nil] forCellReuseIdentifier:@"cell"];
     self.tabView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
@@ -63,7 +63,9 @@
 }
 
 -(void)setBtnClick:(UIButton *)sender{
-    NSLog(@"设置按钮被点击了");
+    SettingController *ctl = [[SettingController alloc]init];
+    ctl.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:ctl animated:YES];
 }
 
 #pragma mark - 设置头部

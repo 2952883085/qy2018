@@ -22,6 +22,7 @@ static NSString *const recommendCellid = @"recommendCellid";
 @property (weak, nonatomic) IBOutlet UITableView *tabView;
 @property(nonatomic,strong)RecommendHeader *recommendHeader;
 @property(nonatomic,strong)UILabel *networkLab;
+@property(nonatomic,strong)XmgMjRefreshFooter *mjFooter;
 @end
 
 @implementation RecommendController
@@ -88,7 +89,8 @@ static NSString *const recommendCellid = @"recommendCellid";
     self.tabView.mj_header = [XmgMjRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(downRefresh)];
     [self.tabView.mj_header beginRefreshing];
     
-    self.tabView.mj_footer= [XmgMjRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(upRefrsh)];
+    self.mjFooter = [XmgMjRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(upRefrsh)];
+    self.tabView.mj_footer = self.mjFooter;
 }
 
 -(void)downRefresh{
@@ -111,6 +113,9 @@ static NSString *const recommendCellid = @"recommendCellid";
        RecommendModel *model=[[RecommendModel alloc]initWithDictionary:responseObject[@"data"] error:nil];
        if(_page==1){
            [weakself.lunboArray removeAllObjects];
+           [weakself.dataSoure removeAllObjects];
+           //恢复没有更多数据刷新状态
+           [weakself.tabView.mj_footer resetNoMoreData];
            for (NSInteger i = 0; i < model.slide.count; i++) {
                lunboModel *m=model.slide[i];
                [weakself.lunboArray addObject:m.photo];
@@ -125,6 +130,11 @@ static NSString *const recommendCellid = @"recommendCellid";
        }
        if(weakself.tabView.mj_footer){
            [weakself.tabView.mj_footer endRefreshing];
+       }
+       if(weakself.dataSoure.count >=50){
+           weakself.mjFooter.stateLabel.hidden = NO;
+           [weakself.mjFooter setTitle:@"没有更多数据了" forState:MJRefreshStateNoMoreData];
+           [weakself.tabView.mj_footer endRefreshingWithNoMoreData];
        }
        
    } failure:^(NSError *error) {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B06EE7420722F6000F40226 /* MineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B06EE7220722F5F00F40226 /* MineCell.m */; };
 		9B06EE7520722F6000F40226 /* MineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B06EE7320722F5F00F40226 /* MineCell.xib */; };
+		9B06EE7820738A0400F40226 /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B06EE7720738A0400F40226 /* SettingController.m */; };
 		9B1E7E74206E24F900558D5F /* XmgMjRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E73206E24F900558D5F /* XmgMjRefreshHeader.m */; };
 		9B1E7E77206E260D00558D5F /* XmgMjRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E76206E260D00558D5F /* XmgMjRefreshFooter.m */; };
 		9B1E7E7D206E329100558D5F /* NavigationBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E7E7C206E329100558D5F /* NavigationBaseController.m */; };
@@ -2190,6 +2191,8 @@
 		9B06EE7120722F5F00F40226 /* MineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineCell.h; sourceTree = "<group>"; };
 		9B06EE7220722F5F00F40226 /* MineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineCell.m; sourceTree = "<group>"; };
 		9B06EE7320722F5F00F40226 /* MineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineCell.xib; sourceTree = "<group>"; };
+		9B06EE7620738A0400F40226 /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		9B06EE7720738A0400F40226 /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
 		9B1E7E72206E24F900558D5F /* XmgMjRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmgMjRefreshHeader.h; sourceTree = "<group>"; };
 		9B1E7E73206E24F900558D5F /* XmgMjRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmgMjRefreshHeader.m; sourceTree = "<group>"; };
 		9B1E7E75206E260D00558D5F /* XmgMjRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmgMjRefreshFooter.h; sourceTree = "<group>"; };
@@ -5455,6 +5458,8 @@
 			children = (
 				9B97C2C6206A15210057A54D /* MineController.h */,
 				9B97C2C7206A15210057A54D /* MineController.m */,
+				9B06EE7620738A0400F40226 /* SettingController.h */,
+				9B06EE7720738A0400F40226 /* SettingController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -9851,6 +9856,7 @@
 				9B1E7E7D206E329100558D5F /* NavigationBaseController.m in Sources */,
 				9B97B25B2069E0800057A54D /* JSONModel.m in Sources */,
 				9B97B2372069E0800057A54D /* DGActivityIndicatorBallClipRotatePulseAnimation.m in Sources */,
+				9B06EE7820738A0400F40226 /* SettingController.m in Sources */,
 				9B97B2712069E0800057A54D /* README.md in Sources */,
 				9B97B2F12069E0880057A54D /* POPAnimationExtras.mm in Sources */,
 				9B97B2F92069E0880057A54D /* POPGeometry.mm in Sources */,
