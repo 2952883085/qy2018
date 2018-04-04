@@ -33,6 +33,7 @@
 #import "FMDB.h"
 #import "AnimationLoadController.h"
 #import "POP.h"
+#import "Masonry.h"
 #import "NavigationBaseController.h"
 #import "UIScrollView+HeaderScaleImage.h"
 #endif

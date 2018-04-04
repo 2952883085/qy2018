@@ -114,7 +114,8 @@ static NSString *const recommendCellid = @"recommendCellid";
        if(_page==1){
            [weakself.lunboArray removeAllObjects];
            [weakself.dataSoure removeAllObjects];
-           //恢复没有更多数据刷新状态
+           weakself.mjFooter.stateLabel.hidden = YES;
+           //重置没有更多数据状态
            [weakself.tabView.mj_footer resetNoMoreData];
            for (NSInteger i = 0; i < model.slide.count; i++) {
                lunboModel *m=model.slide[i];

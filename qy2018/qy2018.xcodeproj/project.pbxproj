@@ -20,6 +20,11 @@
 		9B2D3557206C994400DFAEEF /* AnimationLoadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D3556206C994400DFAEEF /* AnimationLoadController.m */; };
 		9B2D355B206DBCE300DFAEEF /* RecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D3559206DBCE300DFAEEF /* RecommendCell.m */; };
 		9B2D355C206DBCE300DFAEEF /* RecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2D355A206DBCE300DFAEEF /* RecommendCell.xib */; };
+		9B7FA4B020747D40006B0F06 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7FA4AE20747D40006B0F06 /* SettingCell.m */; };
+		9B7FA4B120747D40006B0F06 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7FA4AF20747D40006B0F06 /* SettingCell.xib */; };
+		9B7FA4B5207481DE006B0F06 /* SettingFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7FA4B3207481DE006B0F06 /* SettingFooterView.m */; };
+		9B7FA4B6207481DE006B0F06 /* SettingFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7FA4B4207481DE006B0F06 /* SettingFooterView.xib */; };
+		9B7FA4B920748360006B0F06 /* SectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7FA4B820748360006B0F06 /* SectionHeader.m */; };
 		9B97AED12069DE990057A54D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97AED02069DE990057A54D /* main.m */; };
 		9B97AED42069DE990057A54D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97AED32069DE990057A54D /* AppDelegate.m */; };
 		9B97AEDC2069DE990057A54D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B97AEDB2069DE990057A54D /* Assets.xcassets */; };
@@ -2211,6 +2216,14 @@
 		9B2D3558206DBCE300DFAEEF /* RecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendCell.h; sourceTree = "<group>"; };
 		9B2D3559206DBCE300DFAEEF /* RecommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendCell.m; sourceTree = "<group>"; };
 		9B2D355A206DBCE300DFAEEF /* RecommendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendCell.xib; sourceTree = "<group>"; };
+		9B7FA4AD20747D40006B0F06 /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
+		9B7FA4AE20747D40006B0F06 /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
+		9B7FA4AF20747D40006B0F06 /* SettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
+		9B7FA4B2207481DE006B0F06 /* SettingFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingFooterView.h; sourceTree = "<group>"; };
+		9B7FA4B3207481DE006B0F06 /* SettingFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingFooterView.m; sourceTree = "<group>"; };
+		9B7FA4B4207481DE006B0F06 /* SettingFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingFooterView.xib; sourceTree = "<group>"; };
+		9B7FA4B720748360006B0F06 /* SectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeader.h; sourceTree = "<group>"; };
+		9B7FA4B820748360006B0F06 /* SectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeader.m; sourceTree = "<group>"; };
 		9B97AECC2069DE990057A54D /* qy2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qy2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B97AED02069DE990057A54D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B97AED22069DE990057A54D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -5449,6 +5462,14 @@
 				9B06EE7120722F5F00F40226 /* MineCell.h */,
 				9B06EE7220722F5F00F40226 /* MineCell.m */,
 				9B06EE7320722F5F00F40226 /* MineCell.xib */,
+				9B7FA4AD20747D40006B0F06 /* SettingCell.h */,
+				9B7FA4AE20747D40006B0F06 /* SettingCell.m */,
+				9B7FA4AF20747D40006B0F06 /* SettingCell.xib */,
+				9B7FA4B2207481DE006B0F06 /* SettingFooterView.h */,
+				9B7FA4B3207481DE006B0F06 /* SettingFooterView.m */,
+				9B7FA4B4207481DE006B0F06 /* SettingFooterView.xib */,
+				9B7FA4B720748360006B0F06 /* SectionHeader.h */,
+				9B7FA4B820748360006B0F06 /* SectionHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -7867,6 +7888,7 @@
 				9B97BB5D2069F6AC0057A54D /* Calender_Before_HighLight@2x.png in Resources */,
 				9B97BCF82069F6AD0057A54D /* HasGone_Highlight@2x.png in Resources */,
 				9B97C1F12069F6AF0057A54D /* site@2x.png in Resources */,
+				9B7FA4B120747D40006B0F06 /* SettingCell.xib in Resources */,
 				9B97C0282069F6AF0057A54D /* poiTimeIcon.png in Resources */,
 				9B97BFCB2069F6AE0057A54D /* play_like_tap.png in Resources */,
 				9B97C2B42069F6B00057A54D /* 购物@2x.png in Resources */,
@@ -9443,6 +9465,7 @@
 				9B97C0E72069F6AF0057A54D /* QYOCoupon_Arrow_Down.png in Resources */,
 				9B97BC4A2069F6AD0057A54D /* discount_icon_2_Disabled@2x.png in Resources */,
 				9B97C2292069F6AF0057A54D /* TabBar_Recommend_Highlight@2x.png in Resources */,
+				9B7FA4B6207481DE006B0F06 /* SettingFooterView.xib in Resources */,
 				9B97BB972069F6AD0057A54D /* city_searchNotContent_icon.png in Resources */,
 				9B97BB7F2069F6AC0057A54D /* chatGroup.png in Resources */,
 				9B97BE632069F6AE0057A54D /* mapPin_Planto_Normal@2x.png in Resources */,
@@ -9682,6 +9705,7 @@
 				9B97B26B2069E0800057A54D /* MASViewAttribute.m in Sources */,
 				9B97B2442069E0800057A54D /* DGActivityIndicatorBallZigZagDeflectAnimation.m in Sources */,
 				9B97B2AF2069E0800057A54D /* ZYPinYinSearch.m in Sources */,
+				9B7FA4B020747D40006B0F06 /* SettingCell.m in Sources */,
 				9B97B24B2069E0800057A54D /* DGActivityIndicatorLineScalePulseOutRapidAnimation.m in Sources */,
 				9B97B2472069E0800057A54D /* DGActivityIndicatorFiveDotsAnimation.m in Sources */,
 				9B97B3692069E6360057A54D /* PPNetworkHelper.m in Sources */,
@@ -9739,7 +9763,9 @@
 				9B97B21E2069E0800057A54D /* AFURLResponseSerialization.m in Sources */,
 				9B97B2F52069E0880057A54D /* POPBasicAnimation.mm in Sources */,
 				9B97B2242069E0800057A54D /* AFNetworkActivityIndicatorManager.m in Sources */,
+				9B7FA4B5207481DE006B0F06 /* SettingFooterView.m in Sources */,
 				9B97B2782069E0800057A54D /* MJRefreshAutoNormalFooter.m in Sources */,
+				9B7FA4B920748360006B0F06 /* SectionHeader.m in Sources */,
 				9B97B2342069E0800057A54D /* DGActivityIndicatorBallBeatAnimation.m in Sources */,
 				9B97B2352069E0800057A54D /* DGActivityIndicatorBallClipRotateAnimation.m in Sources */,
 				9B97B2932069E0800057A54D /* SDWebImageDownloader.m in Sources */,
