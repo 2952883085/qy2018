@@ -25,6 +25,15 @@
 		9B7FA4B5207481DE006B0F06 /* SettingFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7FA4B3207481DE006B0F06 /* SettingFooterView.m */; };
 		9B7FA4B6207481DE006B0F06 /* SettingFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7FA4B4207481DE006B0F06 /* SettingFooterView.xib */; };
 		9B7FA4B920748360006B0F06 /* SectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7FA4B820748360006B0F06 /* SectionHeader.m */; };
+		9B7FA4CA2074D9CA006B0F06 /* UMAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7FA4BD2074D9C9006B0F06 /* UMAnalytics.framework */; };
+		9B7FA4CB2074D9CA006B0F06 /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7FA4C12074D9CA006B0F06 /* UMCommon.framework */; };
+		9B7FA4CC2074D9CA006B0F06 /* SecurityEnvSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7FA4C42074D9CA006B0F06 /* SecurityEnvSDK.framework */; };
+		9B7FA4CD2074D9CA006B0F06 /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7FA4C52074D9CA006B0F06 /* UTDID.framework */; };
+		9B7FA4CE2074D9CA006B0F06 /* UMCommonLog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9B7FA4C82074D9CA006B0F06 /* UMCommonLog.bundle */; };
+		9B7FA4CF2074D9CA006B0F06 /* UMCommonLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7FA4C92074D9CA006B0F06 /* UMCommonLog.framework */; };
+		9B7FA4D12074DA35006B0F06 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7FA4D02074DA35006B0F06 /* CoreTelephony.framework */; };
+		9B7FA4D32074DA47006B0F06 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7FA4D22074DA47006B0F06 /* libz.tbd */; };
+		9B7FA4D52074DC21006B0F06 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7FA4D42074DC21006B0F06 /* SystemConfiguration.framework */; };
 		9B97AED12069DE990057A54D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97AED02069DE990057A54D /* main.m */; };
 		9B97AED42069DE990057A54D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97AED32069DE990057A54D /* AppDelegate.m */; };
 		9B97AEDC2069DE990057A54D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B97AEDB2069DE990057A54D /* Assets.xcassets */; };
@@ -2224,6 +2233,15 @@
 		9B7FA4B4207481DE006B0F06 /* SettingFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingFooterView.xib; sourceTree = "<group>"; };
 		9B7FA4B720748360006B0F06 /* SectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeader.h; sourceTree = "<group>"; };
 		9B7FA4B820748360006B0F06 /* SectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeader.m; sourceTree = "<group>"; };
+		9B7FA4BD2074D9C9006B0F06 /* UMAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMAnalytics.framework; sourceTree = "<group>"; };
+		9B7FA4C12074D9CA006B0F06 /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
+		9B7FA4C42074D9CA006B0F06 /* SecurityEnvSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SecurityEnvSDK.framework; sourceTree = "<group>"; };
+		9B7FA4C52074D9CA006B0F06 /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
+		9B7FA4C82074D9CA006B0F06 /* UMCommonLog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMCommonLog.bundle; sourceTree = "<group>"; };
+		9B7FA4C92074D9CA006B0F06 /* UMCommonLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommonLog.framework; sourceTree = "<group>"; };
+		9B7FA4D02074DA35006B0F06 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		9B7FA4D22074DA47006B0F06 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9B7FA4D42074DC21006B0F06 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9B97AECC2069DE990057A54D /* qy2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qy2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B97AED02069DE990057A54D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B97AED22069DE990057A54D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -4629,7 +4647,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B7FA4D52074DC21006B0F06 /* SystemConfiguration.framework in Frameworks */,
+				9B7FA4D32074DA47006B0F06 /* libz.tbd in Frameworks */,
+				9B7FA4D12074DA35006B0F06 /* CoreTelephony.framework in Frameworks */,
+				9B7FA4CF2074D9CA006B0F06 /* UMCommonLog.framework in Frameworks */,
+				9B7FA4CB2074D9CA006B0F06 /* UMCommon.framework in Frameworks */,
 				9B97B38A2069E80F0057A54D /* libsqlite3.0.tbd in Frameworks */,
+				9B7FA4CA2074D9CA006B0F06 /* UMAnalytics.framework in Frameworks */,
+				9B7FA4CD2074D9CA006B0F06 /* UTDID.framework in Frameworks */,
+				9B7FA4CC2074D9CA006B0F06 /* SecurityEnvSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4643,6 +4669,92 @@
 				9B1E7E80206E433C00558D5F /* DataBaseManager.m */,
 			);
 			path = "数据库";
+			sourceTree = "<group>";
+		};
+		9B7FA4BA2074D9B5006B0F06 /* UMeng */ = {
+			isa = PBXGroup;
+			children = (
+				9B7FA4BB2074D9C9006B0F06 /* analytics */,
+				9B7FA4BE2074D9CA006B0F06 /* common */,
+				9B7FA4C22074D9CA006B0F06 /* thirdparties */,
+				9B7FA4C62074D9CA006B0F06 /* umcommonlog */,
+			);
+			name = UMeng;
+			path = qy2018/UMeng;
+			sourceTree = SOURCE_ROOT;
+		};
+		9B7FA4BB2074D9C9006B0F06 /* analytics */ = {
+			isa = PBXGroup;
+			children = (
+				9B7FA4BC2074D9C9006B0F06 /* analytics_ios_5.5.0 */,
+			);
+			path = analytics;
+			sourceTree = "<group>";
+		};
+		9B7FA4BC2074D9C9006B0F06 /* analytics_ios_5.5.0 */ = {
+			isa = PBXGroup;
+			children = (
+				9B7FA4BD2074D9C9006B0F06 /* UMAnalytics.framework */,
+			);
+			path = analytics_ios_5.5.0;
+			sourceTree = "<group>";
+		};
+		9B7FA4BE2074D9CA006B0F06 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				9B7FA4BF2074D9CA006B0F06 /* common_ios_1.5.0 */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		9B7FA4BF2074D9CA006B0F06 /* common_ios_1.5.0 */ = {
+			isa = PBXGroup;
+			children = (
+				9B7FA4C02074D9CA006B0F06 /* normal */,
+			);
+			path = common_ios_1.5.0;
+			sourceTree = "<group>";
+		};
+		9B7FA4C02074D9CA006B0F06 /* normal */ = {
+			isa = PBXGroup;
+			children = (
+				9B7FA4C12074D9CA006B0F06 /* UMCommon.framework */,
+			);
+			path = normal;
+			sourceTree = "<group>";
+		};
+		9B7FA4C22074D9CA006B0F06 /* thirdparties */ = {
+			isa = PBXGroup;
+			children = (
+				9B7FA4C32074D9CA006B0F06 /* thirdparties_ios_1.0.5 */,
+			);
+			path = thirdparties;
+			sourceTree = "<group>";
+		};
+		9B7FA4C32074D9CA006B0F06 /* thirdparties_ios_1.0.5 */ = {
+			isa = PBXGroup;
+			children = (
+				9B7FA4C42074D9CA006B0F06 /* SecurityEnvSDK.framework */,
+				9B7FA4C52074D9CA006B0F06 /* UTDID.framework */,
+			);
+			path = thirdparties_ios_1.0.5;
+			sourceTree = "<group>";
+		};
+		9B7FA4C62074D9CA006B0F06 /* umcommonlog */ = {
+			isa = PBXGroup;
+			children = (
+				9B7FA4C72074D9CA006B0F06 /* umcommonlog_ios_1.0.0 */,
+			);
+			path = umcommonlog;
+			sourceTree = "<group>";
+		};
+		9B7FA4C72074D9CA006B0F06 /* umcommonlog_ios_1.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				9B7FA4C82074D9CA006B0F06 /* UMCommonLog.bundle */,
+				9B7FA4C92074D9CA006B0F06 /* UMCommonLog.framework */,
+			);
+			path = umcommonlog_ios_1.0.0;
 			sourceTree = "<group>";
 		};
 		9B97AEC32069DE980057A54D = {
@@ -5376,6 +5488,7 @@
 		9B97B3432069E1260057A54D /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				9B7FA4BA2074D9B5006B0F06 /* UMeng */,
 				9B1E7E7E206E433C00558D5F /* 数据库 */,
 				9B97C2E3206A3CB60057A54D /* Config */,
 				9B97C2CB206A15410057A54D /* Public */,
@@ -5615,6 +5728,9 @@
 		9B97B3882069E80F0057A54D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B7FA4D42074DC21006B0F06 /* SystemConfiguration.framework */,
+				9B7FA4D22074DA47006B0F06 /* libz.tbd */,
+				9B7FA4D02074DA35006B0F06 /* CoreTelephony.framework */,
 				9B97B3892069E80F0057A54D /* libsqlite3.0.tbd */,
 			);
 			name = Frameworks;
@@ -9257,6 +9373,7 @@
 				9B97C20F2069F6AF0057A54D /* Star1_微锦囊.png in Resources */,
 				9B97C27C2069F6B00057A54D /* way.png in Resources */,
 				9B97C0CF2069F6AF0057A54D /* QYOapplePay_Icon.png in Resources */,
+				9B7FA4CE2074D9CA006B0F06 /* UMCommonLog.bundle in Resources */,
 				9B97C2A22069F6B00057A54D /* 景点_Small@2x.png in Resources */,
 				9B97C00F2069F6AF0057A54D /* poiDetail_More_icon@2x.png in Resources */,
 				9B97BC302069F6AD0057A54D /* discount_icon_10.png in Resources */,
@@ -10004,6 +10121,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 5VH7L64M84;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/qy2018/UMeng/analytics/analytics_ios_5.5.0",
+					"$(PROJECT_DIR)/qy2018/UMeng/common/common_ios_1.5.0/normal",
+					"$(PROJECT_DIR)/qy2018/UMeng/thirdparties/thirdparties_ios_1.0.5",
+					"$(PROJECT_DIR)/qy2018/UMeng/umcommonlog/umcommonlog_ios_1.0.0",
+				);
 				GCC_PREFIX_HEADER = /Users/zxy/Desktop/qy2018/qy2018/qy2018/other/PrefixHeader.pch;
 				INFOPLIST_FILE = qy2018/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -10019,6 +10143,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 5VH7L64M84;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/qy2018/UMeng/analytics/analytics_ios_5.5.0",
+					"$(PROJECT_DIR)/qy2018/UMeng/common/common_ios_1.5.0/normal",
+					"$(PROJECT_DIR)/qy2018/UMeng/thirdparties/thirdparties_ios_1.0.5",
+					"$(PROJECT_DIR)/qy2018/UMeng/umcommonlog/umcommonlog_ios_1.0.0",
+				);
 				GCC_PREFIX_HEADER = /Users/zxy/Desktop/qy2018/qy2018/qy2018/other/PrefixHeader.pch;
 				INFOPLIST_FILE = qy2018/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

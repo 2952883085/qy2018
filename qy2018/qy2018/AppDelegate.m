@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "CustomTabBarController.h"
+#import <UMCommon/UMCommon.h>
+#import <UMCommonLog/UMCommonLogManager.h>
+#import <UMAnalytics/MobClick.h>
 @interface AppDelegate ()
 
 @end
@@ -22,6 +25,16 @@
     [self.window makeKeyAndVisible];
     CustomTabBarController *tabBarCtl=[[CustomTabBarController alloc]init];
     self.window.rootViewController=tabBarCtl;
+    
+    //开发者需要显式的调用此函数，日志系统才能工作
+    [UMCommonLogManager setUpUMCommonLogManager];
+    /** 设置是否在console输出SDK的log信息.
+     @param bFlag 默认NO(不输出log); 设置为YES, 输出可供调试参考的log信息. 发布产品时必须设置为NO.
+     */
+    [UMConfigure setLogEnabled:YES];//设置打开日志，
+    //设置收集bug，默认为yes 开启
+    [MobClick setCrashReportEnabled:YES];
+    [UMConfigure initWithAppkey:um_APPkey channel:@"App Store"];
     return YES;
 }
 

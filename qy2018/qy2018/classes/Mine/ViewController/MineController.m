@@ -99,7 +99,7 @@
         cell.titleL.text = self.titleArray[indexPath.row + 3];
     }else{
         cell.imgVIew.image = [UIImage imageNamed:self.imgArray[indexPath.row + 5]];
-        cell.titleL.text = self.titleArray[indexPath.row + 5];
+        cell.titleL.text = self.titleArray[indexPath.row + 6];
     }
     return cell;
 }

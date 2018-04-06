@@ -10,6 +10,9 @@
 #define PrefixHeader_pch
 #define screenWidth [UIScreen mainScreen].bounds.size.width
 #define screenHeight [UIScreen mainScreen].bounds.size.height
+#define um_APPkey @"5ab0ccc9b27b0a4bae00011d"
+
+
 #ifdef __OBJC__
 #import "interface.h"
 #import "Helper.h"
