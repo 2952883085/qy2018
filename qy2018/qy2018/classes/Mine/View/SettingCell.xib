@@ -31,15 +31,23 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mine_Arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="N7o-z7-2FH">
-                        <rect key="frame" x="285" y="12" width="20" height="20"/>
+                        <rect key="frame" x="295" y="12" width="20" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="a7t-iM-UAM"/>
                             <constraint firstAttribute="width" constant="20" id="bvC-Bq-pml"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMT-rG-JuW">
+                        <rect key="frame" x="254.5" y="14" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="N7o-z7-2FH" secondAttribute="trailing" constant="15" id="Qns-hr-r3T"/>
+                    <constraint firstItem="N7o-z7-2FH" firstAttribute="leading" secondItem="dMT-rG-JuW" secondAttribute="trailing" constant="5" id="9Bo-Ik-xCT"/>
+                    <constraint firstItem="dMT-rG-JuW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KFv-IR-wwH"/>
+                    <constraint firstAttribute="trailing" secondItem="N7o-z7-2FH" secondAttribute="trailing" constant="5" id="Qns-hr-r3T"/>
                     <constraint firstItem="rd2-yx-fRY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="T1w-08-dXk"/>
                     <constraint firstItem="oYU-1h-ulJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Z9P-ix-igC"/>
                     <constraint firstItem="N7o-z7-2FH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hQ4-q6-Wsz"/>
@@ -50,9 +58,10 @@
             <connections>
                 <outlet property="arrowView" destination="N7o-z7-2FH" id="mdm-pF-yWU"/>
                 <outlet property="imgVIew" destination="rd2-yx-fRY" id="zEh-mY-4Xb"/>
+                <outlet property="subTitleL" destination="dMT-rG-JuW" id="12h-cv-xrQ"/>
                 <outlet property="titleL" destination="oYU-1h-ulJ" id="89W-0x-iJl"/>
             </connections>
-            <point key="canvasLocation" x="-381" y="72"/>
+            <point key="canvasLocation" x="-583" y="61"/>
         </tableViewCell>
     </objects>
     <resources>

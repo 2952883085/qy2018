@@ -2199,6 +2199,12 @@
 		9B97C2DF206A1EFB0057A54D /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2DE206A1EFB0057A54D /* CustomTabBar.m */; };
 		9B97C2E2206A38180057A54D /* RecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2E1206A38180057A54D /* RecommendModel.m */; };
 		9B97C2E7206A48C90057A54D /* RecommendHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97C2E6206A48C90057A54D /* RecommendHeader.m */; };
+		9BF58BE32079B04300622A0E /* BJInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF58BE22079B04300622A0E /* BJInfoController.m */; };
+		9BF58BE72079B25200622A0E /* AvatarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF58BE52079B25200622A0E /* AvatarCell.m */; };
+		9BF58BE82079B25200622A0E /* AvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF58BE62079B25200622A0E /* AvatarCell.xib */; };
+		9BF58BEF2079B4AE00622A0E /* BJCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF58BED2079B4AE00622A0E /* BJCell.m */; };
+		9BF58BF02079B4AE00622A0E /* BJCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF58BEE2079B4AE00622A0E /* BJCell.xib */; };
+		9BF58BF42079FA7400622A0E /* CachingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF58BF32079FA7400622A0E /* CachingController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -4640,6 +4646,16 @@
 		9B97C2E4206A3CFC0057A54D /* interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = interface.h; sourceTree = "<group>"; };
 		9B97C2E5206A48C90057A54D /* RecommendHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendHeader.h; sourceTree = "<group>"; };
 		9B97C2E6206A48C90057A54D /* RecommendHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendHeader.m; sourceTree = "<group>"; };
+		9BF58BE12079B04300622A0E /* BJInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJInfoController.h; sourceTree = "<group>"; };
+		9BF58BE22079B04300622A0E /* BJInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJInfoController.m; sourceTree = "<group>"; };
+		9BF58BE42079B25200622A0E /* AvatarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarCell.h; sourceTree = "<group>"; };
+		9BF58BE52079B25200622A0E /* AvatarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarCell.m; sourceTree = "<group>"; };
+		9BF58BE62079B25200622A0E /* AvatarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvatarCell.xib; sourceTree = "<group>"; };
+		9BF58BEC2079B4AE00622A0E /* BJCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJCell.h; sourceTree = "<group>"; };
+		9BF58BED2079B4AE00622A0E /* BJCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJCell.m; sourceTree = "<group>"; };
+		9BF58BEE2079B4AE00622A0E /* BJCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BJCell.xib; sourceTree = "<group>"; };
+		9BF58BF22079FA7400622A0E /* CachingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachingController.h; sourceTree = "<group>"; };
+		9BF58BF32079FA7400622A0E /* CachingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachingController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4797,6 +4813,7 @@
 		9B97B0CB2069E0730057A54D /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				9BF58BF12079FA7400622A0E /* app缓存 */,
 				9B97B36A2069E7820057A54D /* 封装的scrollView */,
 				9B97B35D2069E6360057A54D /* NetWorkRequestHelper */,
 				9B97B3002069E0960057A54D /* Catgoray */,
@@ -5583,6 +5600,12 @@
 				9B7FA4B4207481DE006B0F06 /* SettingFooterView.xib */,
 				9B7FA4B720748360006B0F06 /* SectionHeader.h */,
 				9B7FA4B820748360006B0F06 /* SectionHeader.m */,
+				9BF58BE42079B25200622A0E /* AvatarCell.h */,
+				9BF58BE52079B25200622A0E /* AvatarCell.m */,
+				9BF58BE62079B25200622A0E /* AvatarCell.xib */,
+				9BF58BEC2079B4AE00622A0E /* BJCell.h */,
+				9BF58BED2079B4AE00622A0E /* BJCell.m */,
+				9BF58BEE2079B4AE00622A0E /* BJCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5594,6 +5617,8 @@
 				9B97C2C7206A15210057A54D /* MineController.m */,
 				9B06EE7620738A0400F40226 /* SettingController.h */,
 				9B06EE7720738A0400F40226 /* SettingController.m */,
+				9BF58BE12079B04300622A0E /* BJInfoController.h */,
+				9BF58BE22079B04300622A0E /* BJInfoController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -7755,6 +7780,15 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		9BF58BF12079FA7400622A0E /* app缓存 */ = {
+			isa = PBXGroup;
+			children = (
+				9BF58BF22079FA7400622A0E /* CachingController.h */,
+				9BF58BF32079FA7400622A0E /* CachingController.m */,
+			);
+			path = "app缓存";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -8733,6 +8767,7 @@
 				9B97BD9C2069F6AD0057A54D /* Info.plist in Resources */,
 				9B97BEC52069F6AE0057A54D /* Mine_Arrow.png in Resources */,
 				9B97C2812069F6B00057A54D /* WebView_More_White@2x.png in Resources */,
+				9BF58BF02079B4AE00622A0E /* BJCell.xib in Resources */,
 				9B97BC402069F6AD0057A54D /* discount_icon_12_Highlighted.png in Resources */,
 				9B97C2072069F6AF0057A54D /* Sort_Sale.png in Resources */,
 				9B97BDA32069F6AD0057A54D /* LastMinute_AddFavor_Pressed.png in Resources */,
@@ -9750,6 +9785,7 @@
 				9B97BB522069F6AC0057A54D /* Blur_PlaceHolder.png in Resources */,
 				9B97BC7D2069F6AD0057A54D /* DiscountTag.png in Resources */,
 				9B97BD9F2069F6AD0057A54D /* Info_White_Pressed.png in Resources */,
+				9BF58BE82079B25200622A0E /* AvatarCell.xib in Resources */,
 				9B97C0052069F6AF0057A54D /* poicoment_zan_icon@2x.png in Resources */,
 				9B97C2712069F6B00057A54D /* WantAndGo_Empty_Love.png in Resources */,
 				9B97BE992069F6AE0057A54D /* mapPin_Selected_4@2x.png in Resources */,
@@ -9805,6 +9841,7 @@
 				9B97B2F22069E0880057A54D /* POPAnimationRuntime.mm in Sources */,
 				9B97B3682069E6360057A54D /* PPNetworkCache.m in Sources */,
 				9B97B2432069E0800057A54D /* DGActivityIndicatorBallZigZagAnimation.m in Sources */,
+				9BF58BE32079B04300622A0E /* BJInfoController.m in Sources */,
 				9B97B26D2069E0800057A54D /* NSArray+MASAdditions.m in Sources */,
 				9B97B33A2069E0960057A54D /* UIImageView+ZXYExtension.m in Sources */,
 				9B97B2392069E0800057A54D /* DGActivityIndicatorBallGridPulseAnimation.m in Sources */,
@@ -9880,6 +9917,7 @@
 				9B97B21E2069E0800057A54D /* AFURLResponseSerialization.m in Sources */,
 				9B97B2F52069E0880057A54D /* POPBasicAnimation.mm in Sources */,
 				9B97B2242069E0800057A54D /* AFNetworkActivityIndicatorManager.m in Sources */,
+				9BF58BF42079FA7400622A0E /* CachingController.m in Sources */,
 				9B7FA4B5207481DE006B0F06 /* SettingFooterView.m in Sources */,
 				9B97B2782069E0800057A54D /* MJRefreshAutoNormalFooter.m in Sources */,
 				9B7FA4B920748360006B0F06 /* SectionHeader.m in Sources */,
@@ -9888,6 +9926,7 @@
 				9B97B2932069E0800057A54D /* SDWebImageDownloader.m in Sources */,
 				9B97B2382069E0800057A54D /* DGActivityIndicatorBallGridBeatAnimation.m in Sources */,
 				9B97B3822069E7820057A54D /* TAAnimatedDotView.m in Sources */,
+				9BF58BEF2079B4AE00622A0E /* BJCell.m in Sources */,
 				9B97B29F2069E0800057A54D /* SVProgressAnimatedView.m in Sources */,
 				9B97B2732069E0800057A54D /* MJRefreshBackFooter.m in Sources */,
 				9B97B2422069E0800057A54D /* DGActivityIndicatorBallTrianglePathAnimation.m in Sources */,
@@ -9951,6 +9990,7 @@
 				9B97C2E7206A48C90057A54D /* RecommendHeader.m in Sources */,
 				9B97B2942069E0800057A54D /* SDWebImageDownloaderOperation.m in Sources */,
 				9B97B2462069E0800057A54D /* DGActivityIndicatorDoubleBounceAnimation.m in Sources */,
+				9BF58BE72079B25200622A0E /* AvatarCell.m in Sources */,
 				9B97B25A2069E0800057A54D /* FMResultSet.m in Sources */,
 				9B97B24D2069E0800057A54D /* DGActivityIndicatorRotatingSandglassAnimation.m in Sources */,
 				9B97B23C2069E0800057A54D /* DGActivityIndicatorBallRotateAnimation.m in Sources */,

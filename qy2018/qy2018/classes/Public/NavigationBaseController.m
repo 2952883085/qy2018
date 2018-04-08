@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16],NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [self.navigationController.navigationBar setBarTintColor:[UIColor cz_colorWithHex:0x4FA26F]];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[[UIImage imageNamed:@"QYNavBackWhite.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(leftItemClick)];
