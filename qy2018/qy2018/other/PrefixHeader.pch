@@ -39,5 +39,7 @@
 #import "Masonry.h"
 #import "NavigationBaseController.h"
 #import "UIScrollView+HeaderScaleImage.h"
+#import "PYSearch.h"
+#import "SearchResultController.h"
 #endif
 #endif /* PrefixHeader_pch */

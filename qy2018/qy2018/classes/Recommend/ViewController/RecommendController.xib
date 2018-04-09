@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecommendController">
             <connections>
+                <outlet property="searchBgView" destination="zs7-wz-Rzm" id="KE9-iH-eo6"/>
+                <outlet property="searchBtn" destination="ryA-CJ-dTi" id="10G-vq-OHa"/>
                 <outlet property="tabView" destination="Cuw-nK-vVF" id="h6m-fp-DUd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,15 +29,49 @@
                         <outlet property="delegate" destination="-1" id="9zc-vY-UiO"/>
                     </connections>
                 </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zs7-wz-Rzm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryA-CJ-dTi">
+                            <rect key="frame" x="15" y="24" width="345" height="30"/>
+                            <color key="backgroundColor" red="0.16862745098039217" green="0.4392156862745098" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="APw-GF-9ho"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="搜素目的地、锦囊、游记、特价、穷游" image="Search_icn.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="searchBtnClick:" destination="-1" eventType="touchUpInside" id="glX-Ng-3Ze"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.11372549019607843" green="0.5490196078431373" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ryA-CJ-dTi" secondAttribute="trailing" constant="15" id="5Y2-ws-imS"/>
+                        <constraint firstItem="ryA-CJ-dTi" firstAttribute="leading" secondItem="zs7-wz-Rzm" secondAttribute="leading" constant="15" id="LL5-iA-MD8"/>
+                        <constraint firstAttribute="height" constant="64" id="iVr-0l-gIV"/>
+                        <constraint firstAttribute="bottom" secondItem="ryA-CJ-dTi" secondAttribute="bottom" constant="10" id="xiK-fB-lzT"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="zs7-wz-Rzm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7Y6-xE-z3j"/>
                 <constraint firstAttribute="trailing" secondItem="Cuw-nK-vVF" secondAttribute="trailing" id="8Pr-kE-i6L"/>
+                <constraint firstAttribute="trailing" secondItem="zs7-wz-Rzm" secondAttribute="trailing" id="C80-0r-J19"/>
+                <constraint firstItem="zs7-wz-Rzm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Lk5-81-vhQ"/>
                 <constraint firstItem="Cuw-nK-vVF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="X4h-f8-fee"/>
                 <constraint firstAttribute="bottom" secondItem="Cuw-nK-vVF" secondAttribute="bottom" id="etQ-wh-mFG"/>
                 <constraint firstItem="Cuw-nK-vVF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iPV-0A-vIN"/>
             </constraints>
-            <point key="canvasLocation" x="-21" y="157"/>
+            <point key="canvasLocation" x="-349" y="138"/>
         </view>
     </objects>
+    <resources>
+        <image name="Search_icn.png" width="15" height="15"/>
+    </resources>
 </document>

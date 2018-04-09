@@ -147,13 +147,6 @@
 		9B97B2842069E0800057A54D /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97B1B92069E0800057A54D /* UIScrollView+MJRefresh.m */; };
 		9B97B2852069E0800057A54D /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97B1BB2069E0800057A54D /* UIView+MJExtension.m */; };
 		9B97B2862069E0800057A54D /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97B1BE2069E0800057A54D /* NSString+URLEncoding.m */; };
-		9B97B2872069E0800057A54D /* NSBundle+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97B1C12069E0800057A54D /* NSBundle+PYSearchExtension.m */; };
-		9B97B2882069E0800057A54D /* PYSearch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9B97B1C22069E0800057A54D /* PYSearch.bundle */; };
-		9B97B2892069E0800057A54D /* PYSearchConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97B1C52069E0800057A54D /* PYSearchConst.m */; };
-		9B97B28A2069E0800057A54D /* PYSearchSuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97B1C72069E0800057A54D /* PYSearchSuggestionViewController.m */; };
-		9B97B28B2069E0800057A54D /* PYSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97B1C92069E0800057A54D /* PYSearchViewController.m */; };
-		9B97B28C2069E0800057A54D /* UIColor+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97B1CB2069E0800057A54D /* UIColor+PYSearchExtension.m */; };
-		9B97B28D2069E0800057A54D /* UIView+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97B1CD2069E0800057A54D /* UIView+PYSearchExtension.m */; };
 		9B97B28E2069E0800057A54D /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97B1D02069E0800057A54D /* MKAnnotationView+WebCache.m */; };
 		9B97B28F2069E0800057A54D /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97B1D22069E0800057A54D /* NSData+ImageContentType.m */; };
 		9B97B2902069E0800057A54D /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B97B1D42069E0800057A54D /* SDImageCache.m */; };
@@ -2205,6 +2198,17 @@
 		9BF58BEF2079B4AE00622A0E /* BJCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF58BED2079B4AE00622A0E /* BJCell.m */; };
 		9BF58BF02079B4AE00622A0E /* BJCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF58BEE2079B4AE00622A0E /* BJCell.xib */; };
 		9BF58BF42079FA7400622A0E /* CachingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF58BF32079FA7400622A0E /* CachingController.m */; };
+		9BF58C04207A25F800622A0E /* NSBundle+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF58BF7207A25F800622A0E /* NSBundle+PYSearchExtension.m */; };
+		9BF58C05207A25F800622A0E /* PYSearch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9BF58BF8207A25F800622A0E /* PYSearch.bundle */; };
+		9BF58C06207A25F800622A0E /* PYSearchConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF58BFB207A25F800622A0E /* PYSearchConst.m */; };
+		9BF58C07207A25F800622A0E /* PYSearchSuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF58BFD207A25F800622A0E /* PYSearchSuggestionViewController.m */; };
+		9BF58C08207A25F800622A0E /* PYSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF58BFF207A25F800622A0E /* PYSearchViewController.m */; };
+		9BF58C09207A25F800622A0E /* UIColor+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF58C01207A25F800622A0E /* UIColor+PYSearchExtension.m */; };
+		9BF58C0A207A25F800622A0E /* UIView+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF58C03207A25F800622A0E /* UIView+PYSearchExtension.m */; };
+		9BF58C0E207A27ED00622A0E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BF58C10207A27ED00622A0E /* Localizable.strings */; };
+		9BF58C16207B0C6C00622A0E /* SearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF58C14207B0C6C00622A0E /* SearchResultController.m */; };
+		9BF58C17207B0C6C00622A0E /* SearchResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF58C15207B0C6C00622A0E /* SearchResultController.xib */; };
+		9BF58C1A207B3F0E00622A0E /* SearchResultM.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF58C19207B3F0E00622A0E /* SearchResultM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -2473,20 +2477,6 @@
 		9B97B1BB2069E0800057A54D /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		9B97B1BD2069E0800057A54D /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
 		9B97B1BE2069E0800057A54D /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
-		9B97B1C02069E0800057A54D /* NSBundle+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+PYSearchExtension.h"; sourceTree = "<group>"; };
-		9B97B1C12069E0800057A54D /* NSBundle+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+PYSearchExtension.m"; sourceTree = "<group>"; };
-		9B97B1C22069E0800057A54D /* PYSearch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PYSearch.bundle; sourceTree = "<group>"; };
-		9B97B1C32069E0800057A54D /* PYSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearch.h; sourceTree = "<group>"; };
-		9B97B1C42069E0800057A54D /* PYSearchConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchConst.h; sourceTree = "<group>"; };
-		9B97B1C52069E0800057A54D /* PYSearchConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchConst.m; sourceTree = "<group>"; };
-		9B97B1C62069E0800057A54D /* PYSearchSuggestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchSuggestionViewController.h; sourceTree = "<group>"; };
-		9B97B1C72069E0800057A54D /* PYSearchSuggestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchSuggestionViewController.m; sourceTree = "<group>"; };
-		9B97B1C82069E0800057A54D /* PYSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchViewController.h; sourceTree = "<group>"; };
-		9B97B1C92069E0800057A54D /* PYSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchViewController.m; sourceTree = "<group>"; };
-		9B97B1CA2069E0800057A54D /* UIColor+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PYSearchExtension.h"; sourceTree = "<group>"; };
-		9B97B1CB2069E0800057A54D /* UIColor+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PYSearchExtension.m"; sourceTree = "<group>"; };
-		9B97B1CC2069E0800057A54D /* UIView+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PYSearchExtension.h"; sourceTree = "<group>"; };
-		9B97B1CD2069E0800057A54D /* UIView+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PYSearchExtension.m"; sourceTree = "<group>"; };
 		9B97B1CF2069E0800057A54D /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		9B97B1D02069E0800057A54D /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		9B97B1D12069E0800057A54D /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -4656,6 +4646,28 @@
 		9BF58BEE2079B4AE00622A0E /* BJCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BJCell.xib; sourceTree = "<group>"; };
 		9BF58BF22079FA7400622A0E /* CachingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachingController.h; sourceTree = "<group>"; };
 		9BF58BF32079FA7400622A0E /* CachingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachingController.m; sourceTree = "<group>"; };
+		9BF58BF6207A25F800622A0E /* NSBundle+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+PYSearchExtension.h"; sourceTree = "<group>"; };
+		9BF58BF7207A25F800622A0E /* NSBundle+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+PYSearchExtension.m"; sourceTree = "<group>"; };
+		9BF58BF8207A25F800622A0E /* PYSearch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PYSearch.bundle; sourceTree = "<group>"; };
+		9BF58BF9207A25F800622A0E /* PYSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearch.h; sourceTree = "<group>"; };
+		9BF58BFA207A25F800622A0E /* PYSearchConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchConst.h; sourceTree = "<group>"; };
+		9BF58BFB207A25F800622A0E /* PYSearchConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchConst.m; sourceTree = "<group>"; };
+		9BF58BFC207A25F800622A0E /* PYSearchSuggestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchSuggestionViewController.h; sourceTree = "<group>"; };
+		9BF58BFD207A25F800622A0E /* PYSearchSuggestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchSuggestionViewController.m; sourceTree = "<group>"; };
+		9BF58BFE207A25F800622A0E /* PYSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchViewController.h; sourceTree = "<group>"; };
+		9BF58BFF207A25F800622A0E /* PYSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchViewController.m; sourceTree = "<group>"; };
+		9BF58C00207A25F800622A0E /* UIColor+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PYSearchExtension.h"; sourceTree = "<group>"; };
+		9BF58C01207A25F800622A0E /* UIColor+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PYSearchExtension.m"; sourceTree = "<group>"; };
+		9BF58C02207A25F800622A0E /* UIView+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PYSearchExtension.h"; sourceTree = "<group>"; };
+		9BF58C03207A25F800622A0E /* UIView+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PYSearchExtension.m"; sourceTree = "<group>"; };
+		9BF58C0D207A27C900622A0E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		9BF58C0F207A27ED00622A0E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		9BF58C12207B033A00622A0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9BF58C13207B0C6C00622A0E /* SearchResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultController.h; sourceTree = "<group>"; };
+		9BF58C14207B0C6C00622A0E /* SearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultController.m; sourceTree = "<group>"; };
+		9BF58C15207B0C6C00622A0E /* SearchResultController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultController.xib; sourceTree = "<group>"; };
+		9BF58C18207B3F0E00622A0E /* SearchResultM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultM.h; sourceTree = "<group>"; };
+		9BF58C19207B3F0E00622A0E /* SearchResultM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultM.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4834,9 +4846,9 @@
 				9B97B1542069E0800057A54D /* JSONModel */,
 				9B97B16F2069E0800057A54D /* JXAttributeLabel */,
 				9B97B1702069E0800057A54D /* Masonry */,
+				9BF58BF5207A25F800622A0E /* PYSearch */,
 				9B97B18D2069E0800057A54D /* MJRefresh */,
 				9B97B1BC2069E0800057A54D /* NSString+URLEncoding */,
-				9B97B1BF2069E0800057A54D /* PYSearch */,
 				9B97B1CE2069E0800057A54D /* SDWebImage */,
 				9B97B1F02069E0800057A54D /* SVProgressHUD */,
 				9B97B1FB2069E0800057A54D /* UIKit+AFNetworking */,
@@ -5247,27 +5259,6 @@
 			path = "NSString+URLEncoding";
 			sourceTree = "<group>";
 		};
-		9B97B1BF2069E0800057A54D /* PYSearch */ = {
-			isa = PBXGroup;
-			children = (
-				9B97B1C02069E0800057A54D /* NSBundle+PYSearchExtension.h */,
-				9B97B1C12069E0800057A54D /* NSBundle+PYSearchExtension.m */,
-				9B97B1C22069E0800057A54D /* PYSearch.bundle */,
-				9B97B1C32069E0800057A54D /* PYSearch.h */,
-				9B97B1C42069E0800057A54D /* PYSearchConst.h */,
-				9B97B1C52069E0800057A54D /* PYSearchConst.m */,
-				9B97B1C62069E0800057A54D /* PYSearchSuggestionViewController.h */,
-				9B97B1C72069E0800057A54D /* PYSearchSuggestionViewController.m */,
-				9B97B1C82069E0800057A54D /* PYSearchViewController.h */,
-				9B97B1C92069E0800057A54D /* PYSearchViewController.m */,
-				9B97B1CA2069E0800057A54D /* UIColor+PYSearchExtension.h */,
-				9B97B1CB2069E0800057A54D /* UIColor+PYSearchExtension.m */,
-				9B97B1CC2069E0800057A54D /* UIView+PYSearchExtension.h */,
-				9B97B1CD2069E0800057A54D /* UIView+PYSearchExtension.m */,
-			);
-			path = PYSearch;
-			sourceTree = "<group>";
-		};
 		9B97B1CE2069E0800057A54D /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -5528,6 +5519,7 @@
 				9B97AEDB2069DE990057A54D /* Assets.xcassets */,
 				9B97AEDD2069DE990057A54D /* LaunchScreen.storyboard */,
 				9B97AEE02069DE990057A54D /* Info.plist */,
+				9BF58C10207A27ED00622A0E /* Localizable.strings */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -5672,6 +5664,8 @@
 			children = (
 				9B97C2E0206A38180057A54D /* RecommendModel.h */,
 				9B97C2E1206A38180057A54D /* RecommendModel.m */,
+				9BF58C18207B3F0E00622A0E /* SearchResultM.h */,
+				9BF58C19207B3F0E00622A0E /* SearchResultM.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -7734,6 +7728,9 @@
 				9B1E7E7C206E329100558D5F /* NavigationBaseController.m */,
 				9B1E7E872071B9C500558D5F /* ImageTopTitleBottomButton.h */,
 				9B1E7E882071B9C500558D5F /* ImageTopTitleBottomButton.m */,
+				9BF58C13207B0C6C00622A0E /* SearchResultController.h */,
+				9BF58C14207B0C6C00622A0E /* SearchResultController.m */,
+				9BF58C15207B0C6C00622A0E /* SearchResultController.xib */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -7787,6 +7784,27 @@
 				9BF58BF32079FA7400622A0E /* CachingController.m */,
 			);
 			path = "app缓存";
+			sourceTree = "<group>";
+		};
+		9BF58BF5207A25F800622A0E /* PYSearch */ = {
+			isa = PBXGroup;
+			children = (
+				9BF58BF6207A25F800622A0E /* NSBundle+PYSearchExtension.h */,
+				9BF58BF7207A25F800622A0E /* NSBundle+PYSearchExtension.m */,
+				9BF58BF8207A25F800622A0E /* PYSearch.bundle */,
+				9BF58BF9207A25F800622A0E /* PYSearch.h */,
+				9BF58BFA207A25F800622A0E /* PYSearchConst.h */,
+				9BF58BFB207A25F800622A0E /* PYSearchConst.m */,
+				9BF58BFC207A25F800622A0E /* PYSearchSuggestionViewController.h */,
+				9BF58BFD207A25F800622A0E /* PYSearchSuggestionViewController.m */,
+				9BF58BFE207A25F800622A0E /* PYSearchViewController.h */,
+				9BF58BFF207A25F800622A0E /* PYSearchViewController.m */,
+				9BF58C00207A25F800622A0E /* UIColor+PYSearchExtension.h */,
+				9BF58C01207A25F800622A0E /* UIColor+PYSearchExtension.m */,
+				9BF58C02207A25F800622A0E /* UIView+PYSearchExtension.h */,
+				9BF58C03207A25F800622A0E /* UIView+PYSearchExtension.m */,
+			);
+			path = PYSearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -8098,6 +8116,7 @@
 				9B97BD942069F6AD0057A54D /* IM_PhotoButton.png in Resources */,
 				9B97BBD02069F6AD0057A54D /* communityHome_Mall_icon.png in Resources */,
 				9B97C0B72069F6AF0057A54D /* QYNavBackBlue.png in Resources */,
+				9BF58C05207A25F800622A0E /* PYSearch.bundle in Resources */,
 				9B97BD172069F6AD0057A54D /* HomePage_DefaultAvatar_14@2x.png in Resources */,
 				9B97BE462069F6AE0057A54D /* map_wantGo_Seleted_pin.png in Resources */,
 				9B97C1572069F6AF0057A54D /* QYTogetherBack.png in Resources */,
@@ -8481,6 +8500,7 @@
 				9B97BFC42069F6AE0057A54D /* Plate_edit_G@2x.png in Resources */,
 				9B97BF062069F6AE0057A54D /* myOrderCollecte_icon.png in Resources */,
 				9B97C0442069F6AF0057A54D /* Price_Up_Selected.png in Resources */,
+				9BF58C17207B0C6C00622A0E /* SearchResultController.xib in Resources */,
 				9B97C26A2069F6B00057A54D /* UserInfo_Profile_Close@2x.png in Resources */,
 				9B97BE6B2069F6AE0057A54D /* mapPin_Planto_Normal_3@2x.png in Resources */,
 				9B97BBEE2069F6AD0057A54D /* Coupon_Arrow_Down@2x.png in Resources */,
@@ -8669,6 +8689,7 @@
 				9B97BE892069F6AE0057A54D /* mapPin_Planto_Selected_7@2x.png in Resources */,
 				9B97C0BC2069F6AF0057A54D /* QYNavCancel@2x.png in Resources */,
 				9B97BEA52069F6AE0057A54D /* mapPin_user@2x.png in Resources */,
+				9BF58C0E207A27ED00622A0E /* Localizable.strings in Resources */,
 				9B97BF0B2069F6AE0057A54D /* MyOrderList_TopView_Button1@2x.png in Resources */,
 				9B97C0D22069F6AF0057A54D /* QYOApplepayTitle@2x.png in Resources */,
 				9B97C06F2069F6AF0057A54D /* QYCCFoodButton.png in Resources */,
@@ -9637,7 +9658,6 @@
 				9B97BB702069F6AC0057A54D /* CC_Collected.png in Resources */,
 				9B97BCD02069F6AD0057A54D /* guid_img_0.png in Resources */,
 				9B97C11A2069F6AF0057A54D /* QYOTo_Pay_Icon@2x.png in Resources */,
-				9B97B2882069E0800057A54D /* PYSearch.bundle in Resources */,
 				9B97C05D2069F6AF0057A54D /* qq_zoo@2x.png in Resources */,
 				9B97BD7D2069F6AD0057A54D /* hotel_rec_city_icon@2x.png in Resources */,
 				9B97BDF02069F6AE0057A54D /* Mall_FromTo@2x.png in Resources */,
@@ -9841,18 +9861,17 @@
 				9B97B2F22069E0880057A54D /* POPAnimationRuntime.mm in Sources */,
 				9B97B3682069E6360057A54D /* PPNetworkCache.m in Sources */,
 				9B97B2432069E0800057A54D /* DGActivityIndicatorBallZigZagAnimation.m in Sources */,
+				9BF58C08207A25F800622A0E /* PYSearchViewController.m in Sources */,
 				9BF58BE32079B04300622A0E /* BJInfoController.m in Sources */,
 				9B97B26D2069E0800057A54D /* NSArray+MASAdditions.m in Sources */,
 				9B97B33A2069E0960057A54D /* UIImageView+ZXYExtension.m in Sources */,
 				9B97B2392069E0800057A54D /* DGActivityIndicatorBallGridPulseAnimation.m in Sources */,
 				9B97B2FD2069E0880057A54D /* POPSpringAnimation.mm in Sources */,
 				9B97B23B2069E0800057A54D /* DGActivityIndicatorBallPulseSyncAnimation.m in Sources */,
-				9B97B28C2069E0800057A54D /* UIColor+PYSearchExtension.m in Sources */,
 				9B97B33E2069E0960057A54D /* UITextField+changePlaceholder.m in Sources */,
 				9B97B2672069E0800057A54D /* MASCompositeConstraint.m in Sources */,
 				9B97B28F2069E0800057A54D /* NSData+ImageContentType.m in Sources */,
 				9B97B2632069E0800057A54D /* JSONKeyMapper.m in Sources */,
-				9B97B2872069E0800057A54D /* NSBundle+PYSearchExtension.m in Sources */,
 				9B97B2492069E0800057A54D /* DGActivityIndicatorLineScalePartyAnimation.m in Sources */,
 				9B97B2FA2069E0880057A54D /* POPLayerExtras.mm in Sources */,
 				9B97B2592069E0800057A54D /* FMDatabaseQueue.m in Sources */,
@@ -9897,6 +9916,7 @@
 				9B97B23F2069E0800057A54D /* DGActivityIndicatorBallScaleRippleAnimation.m in Sources */,
 				9B97AED12069DE990057A54D /* main.m in Sources */,
 				9B2D3557206C994400DFAEEF /* AnimationLoadController.m in Sources */,
+				9BF58C09207A25F800622A0E /* UIColor+PYSearchExtension.m in Sources */,
 				9B1E7E81206E433C00558D5F /* DataBaseManager.m in Sources */,
 				9B97B2252069E0800057A54D /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				9B97B2572069E0800057A54D /* FMDatabaseAdditions.m in Sources */,
@@ -9918,6 +9938,7 @@
 				9B97B2F52069E0880057A54D /* POPBasicAnimation.mm in Sources */,
 				9B97B2242069E0800057A54D /* AFNetworkActivityIndicatorManager.m in Sources */,
 				9BF58BF42079FA7400622A0E /* CachingController.m in Sources */,
+				9BF58C16207B0C6C00622A0E /* SearchResultController.m in Sources */,
 				9B7FA4B5207481DE006B0F06 /* SettingFooterView.m in Sources */,
 				9B97B2782069E0800057A54D /* MJRefreshAutoNormalFooter.m in Sources */,
 				9B7FA4B920748360006B0F06 /* SectionHeader.m in Sources */,
@@ -9933,6 +9954,7 @@
 				9B97B3352069E0960057A54D /* NSString+XMGPinyinChinese.m in Sources */,
 				9B97B2902069E0800057A54D /* SDImageCache.m in Sources */,
 				9B97B32E2069E0960057A54D /* NSCalendar+XMGExstion.m in Sources */,
+				9BF58C0A207A25F800622A0E /* UIView+PYSearchExtension.m in Sources */,
 				9B97B3382069E0960057A54D /* UIImage+XMGResizing.m in Sources */,
 				9B97B2502069E0800057A54D /* DGActivityIndicatorThreeDotsAnimation.m in Sources */,
 				9B97B2A82069E0800057A54D /* ChineseToPinyinResource.m in Sources */,
@@ -9952,7 +9974,6 @@
 				9B97B2A62069E0800057A54D /* YYMemoryCache.m in Sources */,
 				9B97B2292069E0800057A54D /* UIRefreshControl+AFNetworking.m in Sources */,
 				9B97B27E2069E0800057A54D /* MJRefreshNormalHeader.m in Sources */,
-				9B97B28A2069E0800057A54D /* PYSearchSuggestionViewController.m in Sources */,
 				9B97B2642069E0800057A54D /* JSONValueTransformer.m in Sources */,
 				9B97B2532069E0800057A54D /* DGActivityIndicatorTripleRingsAnimation.m in Sources */,
 				9B97B2A42069E0800057A54D /* YYDiskCache.m in Sources */,
@@ -9966,6 +9987,7 @@
 				9B97B2AC2069E0800057A54D /* PinYinForObjc.m in Sources */,
 				9B97B2A72069E0800057A54D /* ChineseInclude.m in Sources */,
 				9B97B2862069E0800057A54D /* NSString+URLEncoding.m in Sources */,
+				9BF58C07207A25F800622A0E /* PYSearchSuggestionViewController.m in Sources */,
 				9B97B22A2069E0800057A54D /* UIWebView+AFNetworking.m in Sources */,
 				9B97B2512069E0800057A54D /* DGActivityIndicatorTriangleSkewSpinAnimation.m in Sources */,
 				9B97B2A22069E0800057A54D /* SVRadialGradientLayer.m in Sources */,
@@ -9974,19 +9996,21 @@
 				9B97B2312069E0800057A54D /* YYAnimationIndicator.m in Sources */,
 				9B97B3812069E7820057A54D /* TAAbstractDotView.m in Sources */,
 				9B97B2972069E0800057A54D /* UIButton+WebCache.m in Sources */,
+				9BF58C06207A25F800622A0E /* PYSearchConst.m in Sources */,
 				9B97B2792069E0800057A54D /* MJRefreshAutoStateFooter.m in Sources */,
 				9B97B2362069E0800057A54D /* DGActivityIndicatorBallClipRotateMultipleAnimation.m in Sources */,
 				9B97B2962069E0800057A54D /* SDWebImagePrefetcher.m in Sources */,
 				9B97B21A2069E0800057A54D /* AFHTTPSessionManager.m in Sources */,
 				9B97B3422069E0960057A54D /* UIViewController+AlrtMessage.m in Sources */,
-				9B97B28D2069E0800057A54D /* UIView+PYSearchExtension.m in Sources */,
 				9B97B33C2069E0960057A54D /* UILabel+CZAddition.m in Sources */,
 				9B97B23D2069E0800057A54D /* DGActivityIndicatorBallScaleAnimation.m in Sources */,
 				9B97B25C2069E0800057A54D /* JSONModelArray.m in Sources */,
+				9BF58C1A207B3F0E00622A0E /* SearchResultM.m in Sources */,
 				9B97B3412069E0960057A54D /* UIView+ZXYAnimation.m in Sources */,
 				9B97B28E2069E0800057A54D /* MKAnnotationView+WebCache.m in Sources */,
 				9B97B2762069E0800057A54D /* MJRefreshHeader.m in Sources */,
 				9B97B3402069E0960057A54D /* UIView+XMGExtension.m in Sources */,
+				9BF58C04207A25F800622A0E /* NSBundle+PYSearchExtension.m in Sources */,
 				9B97C2E7206A48C90057A54D /* RecommendHeader.m in Sources */,
 				9B97B2942069E0800057A54D /* SDWebImageDownloaderOperation.m in Sources */,
 				9B97B2462069E0800057A54D /* DGActivityIndicatorDoubleBounceAnimation.m in Sources */,
@@ -10013,7 +10037,6 @@
 				9B97B3372069E0960057A54D /* UIColor+CZAddition.m in Sources */,
 				9B97B2F42069E0880057A54D /* POPAnimator.mm in Sources */,
 				9B97B3862069E7820057A54D /* SDCycleScrollView.m in Sources */,
-				9B97B2892069E0800057A54D /* PYSearchConst.m in Sources */,
 				9B97B25D2069E0800057A54D /* JSONModelClassProperty.m in Sources */,
 				9B97B3342069E0960057A54D /* NSString+TimeStamp.m in Sources */,
 				9B97B2F82069E0880057A54D /* POPDecayAnimation.mm in Sources */,
@@ -10023,7 +10046,6 @@
 				9B97B2582069E0800057A54D /* FMDatabasePool.m in Sources */,
 				9B97B2B02069E0800057A54D /* Helper.m in Sources */,
 				9B97B2F72069E0880057A54D /* POPCustomAnimation.mm in Sources */,
-				9B97B28B2069E0800057A54D /* PYSearchViewController.m in Sources */,
 				9B97B3852069E7820057A54D /* SDCollectionViewCell.m in Sources */,
 				9B97B2452069E0800057A54D /* DGActivityIndicatorCookieTerminatorAnimation.m in Sources */,
 				9B97B2612069E0800057A54D /* JSONHTTPClient.m in Sources */,
@@ -10057,9 +10079,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				9B97AEDE2069DE990057A54D /* Base */,
+				9BF58C0D207A27C900622A0E /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		9BF58C10207A27ED00622A0E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BF58C0F207A27ED00622A0E /* zh-Hans */,
+				9BF58C12207B033A00622A0E /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -10069,6 +10101,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -10117,6 +10150,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

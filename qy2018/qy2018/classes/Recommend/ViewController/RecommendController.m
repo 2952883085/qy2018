@@ -12,8 +12,9 @@
 #import "RecommendCell.h"
 #import "XmgMjRefreshHeader.h"
 #import "XmgMjRefreshFooter.h"
+#import "SearchResultM.h"
 static NSString *const recommendCellid = @"recommendCellid";
-@interface RecommendController ()<UITableViewDelegate,UITableViewDataSource>{
+@interface RecommendController ()<UITableViewDelegate,UITableViewDataSource,PYSearchViewControllerDelegate>{
     NSInteger _page;
 }
 @property(nonatomic,strong)NSMutableArray *lunboArray;
@@ -23,9 +24,21 @@ static NSString *const recommendCellid = @"recommendCellid";
 @property(nonatomic,strong)RecommendHeader *recommendHeader;
 @property(nonatomic,strong)UILabel *networkLab;
 @property(nonatomic,strong)XmgMjRefreshFooter *mjFooter;
+
+
+@property (weak, nonatomic) IBOutlet UIView *searchBgView;
+@property (weak, nonatomic) IBOutlet UIButton *searchBtn;
+@property(nonatomic,strong)NSMutableArray *searchArray;
 @end
 
 @implementation RecommendController
+
+-(NSMutableArray *)searchArray{
+    if(!_searchArray){
+        _searchArray = [NSMutableArray array];
+    }
+    return _searchArray;
+}
 
 -(UILabel *)networkView{
     if(!_networkLab){
@@ -68,6 +81,9 @@ static NSString *const recommendCellid = @"recommendCellid";
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets=NO;
     _page=1;
+    self.searchBgView.hidden = YES;
+    self.searchBtn.layer.cornerRadius = 15;
+    self.searchBtn.clipsToBounds = YES;
     [self.view addSubview:self.networkView];
     [self setupHeader];
     [self requestDatas];
@@ -132,7 +148,7 @@ static NSString *const recommendCellid = @"recommendCellid";
        if(weakself.tabView.mj_footer){
            [weakself.tabView.mj_footer endRefreshing];
        }
-       if(weakself.dataSoure.count >=50){
+       if(weakself.dataSoure.count >=80){
            weakself.mjFooter.stateLabel.hidden = NO;
            [weakself.mjFooter setTitle:@"没有更多数据了" forState:MJRefreshStateNoMoreData];
            [weakself.tabView.mj_footer endRefreshingWithNoMoreData];
@@ -192,4 +208,96 @@ static NSString *const recommendCellid = @"recommendCellid";
     return cell;
 }
 
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGFloat offsetY = scrollView.contentOffset.y;
+    NSLog(@"%f",offsetY);
+    if(offsetY > 200){
+        self.searchBgView.hidden = NO;
+    }else if(offsetY < 50){
+        self.searchBgView.hidden = YES;
+    }
+}
+
+#pragma mark -搜索按钮点击事件
+- (IBAction)searchBtnClick:(UIButton *)sender {
+    NSArray *hotSeaches = @[@"Java", @"Python", @"Objective-C", @"Swift", @"C", @"C++", @"PHP", @"C#", @"Perl", @"Go", @"JavaScript", @"R", @"Ruby", @"MATLAB"];
+    PYSearchViewController *searchCtl = [PYSearchViewController searchViewControllerWithHotSearches:hotSeaches searchBarPlaceholder:@"请输入要搜索内容" didSearchBlock:^(PYSearchViewController *searchViewController, UISearchBar *searchBar, NSString *searchText) {
+        NSLog(@"点击搜索结果实现页面跳转在这里");
+        //设置搜索结果控制器
+        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[[SearchResultController alloc]init]];
+        searchViewController.searchResultController = nav;
+    }];
+    
+    searchCtl.searchBarBackgroundColor = [UIColor cz_colorWithHex:0x2B705A];
+    //设置搜索框占位文字颜色
+    [searchCtl.searchTextField changePlaceholderTextColor:[UIColor whiteColor]];
+    //设置输入文字颜色
+    [searchCtl.searchTextField setTextColor:[UIColor whiteColor]];
+    
+    //设置searchBar搜索按钮颜色
+    [searchCtl.searchBar setImage:[UIImage imageNamed:@"communtiy_search_icon"] forSearchBarIcon:UISearchBarIconSearch state:UIControlStateNormal];
+    
+    //设置清除按钮图片
+    [searchCtl.searchBar setImage:[UIImage imageNamed:@"question_tag_cancel_icon"] forSearchBarIcon:UISearchBarIconClear state:UIControlStateNormal];
+    
+    searchCtl.searchBar.layer.cornerRadius = 14;
+    searchCtl.searchBar.clipsToBounds = YES;
+    
+    searchCtl.delegate = self;
+    
+    //通过嵌入来显示搜索结果的视图
+    searchCtl.searchResultShowMode = PYSearchResultShowModeEmbed;
+    
+    
+    //设置搜索历史风格
+    searchCtl.searchHistoryStyle = PYSearchHistoryStyleColorfulTag;
+    searchCtl.hotSearchStyle = PYHotSearchStyleColorfulTag;
+    
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:searchCtl];
+    [nav.navigationBar setBarTintColor:[UIColor cz_colorWithHex:0x1D8C53]];
+    [self presentViewController:nav animated:YES completion:nil];
+}
+
+
+#pragma mark -PYSearchViewControllerDelegate
+
+//点击搜索结果
+- (void)searchViewController:(PYSearchViewController *)searchViewController
+didSelectSearchSuggestionAtIndex:(NSInteger)index
+                  searchText:(NSString *)searchText{
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[[SearchResultController alloc]init]];
+    searchViewController.searchResultController = nav;
+}
+
+#pragma mark -搜索文本开始改变时
+- (void)searchViewController:(PYSearchViewController *)searchViewController
+         searchTextDidChange:(UISearchBar *)searchBar
+                searchText:(NSString *)searchText{
+    
+    
+    //根据搜索文本，从服务器获取搜索结果
+    if(searchText.length){
+        [self requestResultDatas:searchText searchCtl:searchViewController];
+    }
+    
+}
+
+#pragma mark -获取搜索结果数据
+-(void)requestResultDatas:(NSString *)searchText searchCtl:(PYSearchViewController *)searchCtl{
+    __weak typeof(self)weakself = self;
+    [weakself.searchArray removeAllObjects];
+    NSString *str = [searchText stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *url = [NSString stringWithFormat:search_url,str];
+    [PPNetworkHelper GET:url parameters:nil success:^(id responseObject) {
+        NSArray *array = responseObject[@"data"][@"entry"];
+        for (NSInteger i = 0; i < array.count; i++) {
+            SearchResultM *model = [[SearchResultM alloc]initWithDictionary:array[i] error:nil];
+            [weakself.searchArray addObject:model.cnname];
+        }
+        searchCtl.searchSuggestions = weakself.searchArray;
+    } failure:^(NSError *error) {
+        NSLog(@"error=%@",error);
+    }];
+}
 @end
